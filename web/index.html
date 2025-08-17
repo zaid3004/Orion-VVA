@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aurora VVA</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Aurora VVA</h1>
+
+      <div id="conversation">
+        <div id="user-area">
+          <label>You said:</label>
+          <div id="user-text" class="display-area"></div>
+        </div>
+        <div id="assistant-area">
+          <label>Aurora:</label>
+          <div id="assistant-text" class="display-area"></div>
+        </div>
+      </div>
+
+      <canvas id="audio-wave" width="380" height="40"></canvas>
+
+      <button id="mic-btn" title="Click to start listening">
+        <img src="assets/icons/mic.svg" alt="Mic" id="mic-icon" />
+      </button>
+
+      <div id="status" class="status">Idle</div>
+    </div>
+
+    <script type="text/javascript" src="../js/audio_wave.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #252f3e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: 410px;
+  margin: 40px auto;
+  background: #19202a;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  padding: 36px 25px 36px 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+  color: #4fc3f7;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2.1em;
+  margin-bottom: 10px;
+}
+
+#conversation {
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.display-area {
+  width: 100%;
+  min-height: 32px;
+  background: #212b3a;
+  border-radius: 7px;
+  padding: 8px 12px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-size: 1.13em;
+  color: #fafbfd;
+  overflow-wrap: break-word;
+}
+
+label {
+  font-size: 0.98em;
+  opacity: 0.74;
+  margin-top: 2px;
+}
+
+#mic-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d82b7;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.13s, box-shadow 0.13s;
+  box-shadow: 0 2px 12px rgba(50, 160, 255, 0.16);
+}
+
+#mic-btn.listening {
+  background: #ef5350;
+  box-shadow: 0 1px 16px #ef535050;
+}
+
+#mic-btn:hover {
+  background: #2196f3;
+}
+
+#mic-icon {
+  width: 40px;
+  height: 40px;
+}
+
+#audio-wave {
+  width: 380px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: block;
+  background: #23272f;
+  border-radius: 10px;
+}
+
+.status {
+  margin-top: 5px;
+  color: #8ec7fc;
+  font-size: 1em;
+  min-height: 21px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  opacity: 0.8;
+}
