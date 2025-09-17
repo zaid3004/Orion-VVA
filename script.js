@@ -3,6 +3,162 @@
  * Handles authentication, 3-part layout, themes, and voice interaction
  */
 
+class OrionAnalytics {
+    constructor() {
+        this.sessionStart = Date.now();
+        this.events = [];
+        this.userId = null;
+        this.sessionId = this.generateSessionId();
+        
+        // Track session start
+        this.trackEvent('session_start', {
+            timestamp: this.sessionStart,
+            user_agent: navigator.userAgent,
+            screen_resolution: `${screen.width}x${screen.height}`,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        });
+    }
+    
+    generateSessionId() {
+        return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    }
+    
+    setUser(userId, username) {
+        this.userId = userId;
+        this.trackEvent('user_identified', {
+            user_id: userId,
+            username: username
+        });
+    }
+    
+    trackEvent(eventName, properties = {}) {
+        const event = {
+            event_name: eventName,
+            timestamp: Date.now(),
+            session_id: this.sessionId,
+            user_id: this.userId,
+            properties: {
+                ...properties,
+                page_url: window.location.href,
+                referrer: document.referrer
+            }
+        };
+        
+        this.events.push(event);
+        
+        // Send to Google Analytics if available
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                event_category: 'orion_vva',
+                event_label: properties.label || eventName,
+                value: properties.value || 1,
+                custom_parameter_1: properties.command_type || null,
+                custom_parameter_2: properties.timer_duration || null
+            });
+        }
+        
+        // Send to backend for storage
+        this.sendToBackend(event);
+        
+        console.log('📊 Analytics:', eventName, properties);
+    }
+    
+    // Voice-specific tracking methods
+    trackVoiceCommand(command, intent, success, processingTime) {
+        this.trackEvent('voice_command', {
+            command: command,
+            intent: intent,
+            success: success,
+            processing_time: processingTime,
+            command_length: command.length
+        });
+    }
+    
+    trackTimerCreated(duration, description) {
+        this.trackEvent('timer_created', {
+            timer_duration: duration,
+            timer_description: description,
+            label: `${duration}s timer`
+        });
+    }
+    
+    trackTimerCompleted(duration, description) {
+        this.trackEvent('timer_completed', {
+            timer_duration: duration,
+            timer_description: description,
+            label: `${duration}s timer completed`
+        });
+    }
+    
+    trackThemeChange(oldTheme, newTheme) {
+        this.trackEvent('theme_changed', {
+            old_theme: oldTheme,
+            new_theme: newTheme,
+            label: `${oldTheme} to ${newTheme}`
+        });
+    }
+    
+    trackUserAuthentication(action, success, method = 'form') {
+        this.trackEvent('user_auth', {
+            auth_action: action, // 'login' or 'register'
+            auth_success: success,
+            auth_method: method,
+            label: `${action}_${success ? 'success' : 'failed'}`
+        });
+    }
+    
+    trackError(errorType, errorMessage, context) {
+        this.trackEvent('error_occurred', {
+            error_type: errorType,
+            error_message: errorMessage,
+            error_context: context,
+            label: `${errorType}: ${errorMessage}`
+        });
+    }
+    
+    trackPageView(pageName) {
+        this.trackEvent('page_view', {
+            page_name: pageName,
+            label: pageName
+        });
+    }
+    
+    async sendToBackend(event) {
+        try {
+            await fetch('/api/analytics', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('orion_token') || ''}`
+                },
+                body: JSON.stringify(event)
+            });
+        } catch (error) {
+            console.warn('Failed to send analytics to backend:', error);
+        }
+    }
+    
+    // Get session summary
+    getSessionSummary() {
+        const sessionDuration = Date.now() - this.sessionStart;
+        const eventCounts = {};
+        
+        this.events.forEach(event => {
+            eventCounts[event.event_name] = (eventCounts[event.event_name] || 0) + 1;
+        });
+        
+        return {
+            session_id: this.sessionId,
+            user_id: this.userId,
+            session_duration: sessionDuration,
+            total_events: this.events.length,
+            event_breakdown: eventCounts,
+            started_at: this.sessionStart,
+            ended_at: Date.now()
+        };
+    }
+}
+
 class OrionVoiceAssistant {
     constructor() {
         // Authentication state
@@ -29,6 +185,9 @@ class OrionVoiceAssistant {
         
         // Sidebar state
         this.sidebarOpen = false;
+        
+        // Analytics tracking
+        this.analytics = new OrionAnalytics();
         
         this.init();
     }
@@ -250,9 +409,14 @@ class OrionVoiceAssistant {
                 localStorage.setItem('orion_user', JSON.stringify(data.user));
                 localStorage.setItem('orion_token', data.token || 'authenticated');
                 
+                // Track successful login
+                this.analytics.setUser(data.user.id || data.user.username, data.user.username);
+                this.analytics.trackUserAuthentication('login', true);
+                
                 this.showMainApp();
                 this.showSuccess(`Welcome back, Commander ${data.user.username}!`);
             } else {
+                this.analytics.trackUserAuthentication('login', false);
                 this.showError(data.message || 'Login failed');
             }
         } catch (error) {
@@ -299,9 +463,14 @@ class OrionVoiceAssistant {
                 localStorage.setItem('orion_user', JSON.stringify(data.user));
                 localStorage.setItem('orion_token', data.token || 'authenticated');
                 
+                // Track successful registration
+                this.analytics.setUser(data.user.id || data.user.username, data.user.username);
+                this.analytics.trackUserAuthentication('register', true);
+                
                 this.showMainApp();
                 this.showSuccess(`Welcome to the command, ${data.user.username}!`);
             } else {
+                this.analytics.trackUserAuthentication('register', false);
                 this.showError(data.message || 'Registration failed');
             }
         } catch (error) {
@@ -432,6 +601,7 @@ class OrionVoiceAssistant {
      * Change theme
      */
     changeTheme(theme) {
+        const oldTheme = this.currentTheme;
         const html = document.documentElement;
         html.setAttribute('data-theme', theme);
         this.currentTheme = theme;
@@ -444,6 +614,9 @@ class OrionVoiceAssistant {
         
         // Save theme preference
         localStorage.setItem('orion_theme', theme);
+        
+        // Track theme change
+        this.analytics.trackThemeChange(oldTheme, theme);
     }
 
     /**
@@ -877,7 +1050,7 @@ class OrionVoiceAssistant {
 
         // Check for timer commands first before time queries
         if (cmd.includes('timer') || (cmd.includes('set') && (cmd.includes('timer') || cmd.includes('alarm')))) {
-            return 'Timer and alarm functionality requires the full Orion system. Please use the desktop version for advanced scheduling operations, Commander.';
+            return this.handleTimerCommand(cmd);
         }
         
         if (cmd.includes('time') && !cmd.includes('timer')) {
@@ -971,26 +1144,38 @@ class OrionVoiceAssistant {
 
         const utterance = new SpeechSynthesisUtterance(text);
         
-        // Configure voice for Orion - prefer male, deep voice
+        // Configure voice for Orion - Optimus Prime inspired leadership voice
         const voices = this.synthesis.getVoices();
         if (voices.length > 0) {
-            const maleVoice = voices.find(voice => 
-                voice.name.toLowerCase().includes('male') || 
-                voice.name.toLowerCase().includes('david') ||
-                voice.name.toLowerCase().includes('mark')
-            );
+            // Prefer deep, authoritative male voices like Optimus Prime
+            const primeVoice = voices.find(voice => {
+                const name = voice.name.toLowerCase();
+                return (
+                    name.includes('daniel') ||     // Deep British voice
+                    name.includes('alex') ||       // Deep voice option
+                    name.includes('fred') ||       // Another deep option
+                    name.includes('male') ||
+                    name.includes('david') ||
+                    name.includes('mark') ||
+                    name.includes('ryan') ||       // Natural deep voice
+                    (name.includes('microsoft') && name.includes('mark'))
+                );
+            });
             
-            if (maleVoice) {
-                utterance.voice = maleVoice;
+            if (primeVoice) {
+                utterance.voice = primeVoice;
+                console.log(`Using Orion voice: ${primeVoice.name}`);
             } else {
                 // Fallback to first available voice
                 utterance.voice = voices[0];
+                console.log(`Fallback voice: ${voices[0].name}`);
             }
         }
         
-        utterance.rate = 0.9; // Slightly slower for authority
-        utterance.pitch = 0.8; // Lower pitch for commanding presence
-        utterance.volume = 0.9;
+        // Optimus Prime vocal characteristics:
+        utterance.rate = 0.85;    // Measured, thoughtful speech
+        utterance.pitch = 0.7;    // Deep, commanding tone
+        utterance.volume = 1.0;   // Strong, clear projection
         
         utterance.onstart = () => {
             this.isSpeaking = true;
@@ -1124,24 +1309,280 @@ class OrionVoiceAssistant {
     }
 
     /**
-     * Create timer element
+     * Create timer element with analog clock
      */
     createTimerElement(timer) {
         const timerDiv = document.createElement('div');
         timerDiv.className = 'timer-item';
+        timerDiv.id = timer.id;
+        
+        const endTime = new Date(timer.endTime);
+        const formattedEndTime = endTime.toLocaleTimeString();
+        
         timerDiv.innerHTML = `
-            <div class="timer-header">
-                <span class="timer-name">${timer.name}</span>
-                <span class="timer-time">${timer.remaining}</span>
+            <div class="timer-content">
+                <div class="analog-clock">
+                    <div class="clock-face">
+                        <div class="clock-numbers">
+                            <div class="clock-number" style="--i:1"><span>1</span></div>
+                            <div class="clock-number" style="--i:2"><span>2</span></div>
+                            <div class="clock-number" style="--i:3"><span>3</span></div>
+                            <div class="clock-number" style="--i:4"><span>4</span></div>
+                            <div class="clock-number" style="--i:5"><span>5</span></div>
+                            <div class="clock-number" style="--i:6"><span>6</span></div>
+                            <div class="clock-number" style="--i:7"><span>7</span></div>
+                            <div class="clock-number" style="--i:8"><span>8</span></div>
+                            <div class="clock-number" style="--i:9"><span>9</span></div>
+                            <div class="clock-number" style="--i:10"><span>10</span></div>
+                            <div class="clock-number" style="--i:11"><span>11</span></div>
+                            <div class="clock-number" style="--i:12"><span>12</span></div>
+                        </div>
+                        <div class="clock-hand"></div>
+                        <div class="clock-center"></div>
+                    </div>
+                </div>
+                <div class="timer-info">
+                    <div class="timer-description">${timer.description}</div>
+                    <div class="digital-time">${this.formatTime(timer.remaining)}</div>
+                    <div class="completion-time">Completes at ${formattedEndTime}</div>
+                </div>
             </div>
             <div class="timer-controls">
-                <button class="timer-btn" onclick="pauseTimer('${timer.id}')">Pause</button>
-                <button class="timer-btn" onclick="cancelTimer('${timer.id}')">Cancel</button>
+                <button class="timer-btn cancel-btn" onclick="orionApp.cancelTimer('${timer.id}')">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
             </div>
         `;
+        
         return timerDiv;
     }
 
+    /**
+     * Handle timer commands from voice input
+     */
+    handleTimerCommand(command) {
+        const cmd = command.toLowerCase();
+        
+        // Parse timer duration from command
+        const timePattern = /(\d+)\s*(second|seconds|minute|minutes|min|mins|hour|hours|hr|hrs)s?/g;
+        const matches = [...cmd.matchAll(timePattern)];
+        
+        if (matches.length === 0) {
+            return "I couldn't understand the timer duration, Commander. Please specify a time like 'set timer for 5 minutes' or '30 seconds'.";
+        }
+        
+        let totalSeconds = 0;
+        let durationText = '';
+        
+        matches.forEach(match => {
+            const value = parseInt(match[1]);
+            const unit = match[2].toLowerCase();
+            
+            if (unit.includes('second')) {
+                totalSeconds += value;
+                durationText += `${value} second${value !== 1 ? 's' : ''} `;
+            } else if (unit.includes('minute') || unit.includes('min')) {
+                totalSeconds += value * 60;
+                durationText += `${value} minute${value !== 1 ? 's' : ''} `;
+            } else if (unit.includes('hour') || unit.includes('hr')) {
+                totalSeconds += value * 3600;
+                durationText += `${value} hour${value !== 1 ? 's' : ''} `;
+            }
+        });
+        
+        if (totalSeconds === 0) {
+            return "Timer duration must be greater than zero, Commander.";
+        }
+        
+        // Create the timer
+        const timer = this.createTimer(totalSeconds, durationText.trim());
+        this.startTimer(timer);
+        
+        // Track timer creation
+        this.analytics.trackTimerCreated(totalSeconds, durationText.trim());
+        
+        const endTime = new Date(Date.now() + totalSeconds * 1000);
+        return `Timer set for ${durationText.trim()}, Commander. It will complete at ${endTime.toLocaleTimeString()}.`;
+    }
+    
+    /**
+     * Create a new timer object
+     */
+    createTimer(seconds, description) {
+        const timer = {
+            id: `timer_${Date.now()}`,
+            duration: seconds,
+            remaining: seconds,
+            description: description,
+            startTime: Date.now(),
+            endTime: Date.now() + (seconds * 1000),
+            active: true,
+            interval: null
+        };
+        
+        this.timers.push(timer);
+        return timer;
+    }
+    
+    /**
+     * Start a timer with visual display
+     */
+    startTimer(timer) {
+        // Update the timers display
+        this.updateTimersDisplay(this.timers);
+        
+        // Start the countdown interval
+        timer.interval = setInterval(() => {
+            timer.remaining--;
+            
+            if (timer.remaining <= 0) {
+                this.completeTimer(timer);
+            } else {
+                this.updateTimerDisplay(timer);
+            }
+        }, 1000);
+    }
+    
+    /**
+     * Complete a timer and notify user
+     */
+    completeTimer(timer) {
+        // Clear the interval
+        if (timer.interval) {
+            clearInterval(timer.interval);
+        }
+        
+        // Remove from active timers
+        this.timers = this.timers.filter(t => t.id !== timer.id);
+        
+        // Update display
+        this.updateTimersDisplay(this.timers);
+        
+        // Track timer completion
+        this.analytics.trackTimerCompleted(timer.duration, timer.description);
+        
+        // Notify user
+        const message = `Timer complete, Commander! Your ${timer.description} timer has finished.`;
+        this.addMessage('Orion', message, 'orion');
+        this.speak(message);
+        
+        // Play notification sound (browser notification)
+        this.playNotification();
+        
+        // Show browser notification if permitted
+        this.showBrowserNotification('Timer Complete', `Your ${timer.description} timer has finished!`);
+    }
+    
+    /**
+     * Update individual timer display
+     */
+    updateTimerDisplay(timer) {
+        const timerElement = document.getElementById(timer.id);
+        if (timerElement) {
+            const digitalTime = timerElement.querySelector('.digital-time');
+            const analogClock = timerElement.querySelector('.analog-clock');
+            
+            if (digitalTime) {
+                digitalTime.textContent = this.formatTime(timer.remaining);
+            }
+            
+            if (analogClock) {
+                this.updateAnalogClock(analogClock, timer);
+            }
+        }
+    }
+    
+    /**
+     * Update analog clock hands based on timer progress
+     */
+    updateAnalogClock(clockElement, timer) {
+        const progress = (timer.duration - timer.remaining) / timer.duration;
+        const angle = progress * 360;
+        
+        const hand = clockElement.querySelector('.clock-hand');
+        if (hand) {
+            hand.style.transform = `translate(-50%, -100%) rotate(${angle}deg)`;
+        }
+    }
+    
+    /**
+     * Format seconds into readable time
+     */
+    formatTime(seconds) {
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        
+        if (hours > 0) {
+            return `${hours}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        } else {
+            return `${minutes}:${secs.toString().padStart(2, '0')}`;
+        }
+    }
+    
+    /**
+     * Play notification sound
+     */
+    playNotification() {
+        // Create a brief notification sound using Web Audio API
+        try {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.setValueAtTime(880, audioContext.currentTime); // A note
+            oscillator.frequency.setValueAtTime(1108, audioContext.currentTime + 0.1); // C# note
+            
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.5);
+        } catch (error) {
+            console.log('Audio notification not available');
+        }
+    }
+    
+    /**
+     * Show browser notification
+     */
+    showBrowserNotification(title, message) {
+        if ('Notification' in window && Notification.permission === 'granted') {
+            new Notification(title, {
+                body: message,
+                icon: '/static/orion-icon.png' // Optional icon
+            });
+        } else if ('Notification' in window && Notification.permission !== 'denied') {
+            Notification.requestPermission().then(permission => {
+                if (permission === 'granted') {
+                    new Notification(title, {
+                        body: message,
+                        icon: '/static/orion-icon.png'
+                    });
+                }
+            });
+        }
+    }
+    
+    /**
+     * Cancel a timer
+     */
+    cancelTimer(timerId) {
+        const timer = this.timers.find(t => t.id === timerId);
+        if (timer) {
+            if (timer.interval) {
+                clearInterval(timer.interval);
+            }
+            this.timers = this.timers.filter(t => t.id !== timerId);
+            this.updateTimersDisplay(this.timers);
+            
+            this.addMessage('Orion', `Timer for ${timer.description} has been cancelled, Commander.`, 'orion');
+        }
+    }
+    
     /**
      * Show success message
      */
@@ -1155,6 +1596,10 @@ class OrionVoiceAssistant {
      */
     showError(message) {
         console.error('Error:', message);
+        
+        // Track error analytics
+        this.analytics.trackError('user_error', message, 'showError');
+        
         // Could implement toast notifications here
         alert(message); // Simple fallback for now
     }
@@ -1164,6 +1609,27 @@ class OrionVoiceAssistant {
 let orionApp;
 document.addEventListener('DOMContentLoaded', () => {
     orionApp = new OrionVoiceAssistant();
+});
+
+// Global error tracking
+window.addEventListener('error', (event) => {
+    if (orionApp && orionApp.analytics) {
+        orionApp.analytics.trackError('javascript_error', event.message, {
+            filename: event.filename,
+            lineno: event.lineno,
+            colno: event.colno,
+            stack: event.error ? event.error.stack : null
+        });
+    }
+});
+
+// Track unhandled promise rejections
+window.addEventListener('unhandledrejection', (event) => {
+    if (orionApp && orionApp.analytics) {
+        orionApp.analytics.trackError('unhandled_promise_rejection', event.reason, {
+            promise: event.promise
+        });
+    }
 });
 
 // Global functions for timer controls
