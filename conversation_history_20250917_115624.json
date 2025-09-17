@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-09-17T11:54:15.606393",
+    "user_query": "information",
+    "groq_response": "For general information, I can provide details on a wide range of topics, including news, weather, and more. What specific topic would you like to know about?"
+  },
+  {
+    "timestamp": "2025-09-17T11:55:48.872062",
+    "user_query": "timer",
+    "groq_response": "I can set a timer for you. How long would you like the timer to be? Please specify the time in seconds, minutes, or hours. For example, you can say \"set a timer for 5 minutes\" or \"set a timer for 30 seconds\"."
+  }
+]

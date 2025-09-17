@@ -1,0 +1,1103 @@
+2025-09-11 10:02:24,144 - Aurora - INFO - Speech recognition configured
+2025-09-11 10:02:24,302 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-11 10:02:24,302 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-11 10:02:24,938 - Aurora - INFO - TTS engine initialized successfully
+2025-09-11 10:02:26,251 - Aurora - INFO - spaCy NLU initialized successfully
+2025-09-11 10:02:27,477 - Aurora - INFO - Groq AI initialized successfully
+2025-09-11 10:02:27,477 - Aurora - INFO - Aurora voice assistant initialized successfully with Groq AI
+2025-09-11 10:02:27,477 - Aurora - INFO - Speaking: Hello! I'm Aurora, your AI-powered voice assistant. I can handle your usual commands and answer general questions using artificial intelligence. How can I help you today?
+2025-09-11 10:02:46,199 - Aurora - INFO - User said: 'launch note'
+2025-09-11 10:02:46,217 - Aurora - INFO - Speaking: I couldn't launch that application
+2025-09-11 10:02:52,587 - Aurora - INFO - User said: 'launch note'
+2025-09-11 10:02:52,629 - Aurora - INFO - Speaking: I couldn't launch that application
+2025-09-11 10:03:02,091 - Aurora - INFO - User said: 'launch note'
+2025-09-11 10:03:02,114 - Aurora - INFO - Speaking: I couldn't launch that application
+2025-09-11 10:03:09,592 - Aurora - INFO - User said: 'open calculator'
+2025-09-11 10:03:09,683 - Aurora - INFO - Speaking: Opening calculator
+2025-09-11 10:03:18,777 - Aurora - INFO - User said: 'what's 3 x 10'
+2025-09-11 10:03:18,821 - Aurora - INFO - Speaking: The result is 30
+2025-09-11 10:03:30,315 - Aurora - INFO - User said: 'complete the words ok what is my battery'
+2025-09-11 10:03:30,404 - Aurora - INFO - Speaking: Battery level is 85%
+2025-09-11 10:03:39,385 - Aurora - INFO - User said: 'exit'
+2025-09-11 10:03:39,415 - Aurora - INFO - Speaking: Bye for now!
+2025-09-11 10:03:41,256 - Aurora - INFO - Conversation history saved to conversation_history_20250911_100341.json
+2025-09-11 13:46:00,335 - Aurora - INFO - Speech recognition configured
+2025-09-11 13:46:00,459 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-11 13:46:00,459 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-11 13:46:01,054 - Aurora - INFO - TTS engine initialized successfully
+2025-09-11 13:46:01,968 - Aurora - INFO - spaCy NLU initialized successfully
+2025-09-11 13:46:02,965 - Aurora - INFO - Groq AI initialized successfully
+2025-09-11 13:46:02,965 - Aurora - INFO - Aurora voice assistant initialized successfully with Groq AI
+2025-09-11 13:46:02,965 - Aurora - INFO - Speaking: Hello! I'm Aurora, your AI-powered voice assistant. I can handle your usual commands and answer general questions using artificial intelligence. How can I help you today?
+2025-09-11 13:46:22,795 - Aurora - INFO - Speaking: I couldn't understand what you said. Could you repeat that?
+2025-09-11 13:46:34,718 - Aurora - INFO - User said: 'what time is it'
+2025-09-11 13:46:34,768 - Aurora - INFO - Speaking: The current time is 01:46 PM
+2025-09-11 13:46:42,673 - Aurora - INFO - User said: 'what is today's date'
+2025-09-11 13:46:42,716 - Aurora - INFO - Speaking: Today is Thursday, September 11, 2025
+2025-09-11 13:46:52,553 - Aurora - INFO - User said: 'what is the battery right now'
+2025-09-11 13:46:52,714 - Aurora - INFO - Speaking: Battery level is 41%
+2025-09-11 13:47:03,274 - Aurora - INFO - User said: 'who won yesterday's cricket match'
+2025-09-11 13:47:03,343 - Aurora - INFO - Speaking: Today is Thursday, September 11, 2025
+2025-09-16 22:28:53,507 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 22:28:53,507 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 22:28:54,297 - Aurora - INFO - TTS engine initialized.
+2025-09-16 22:28:54,297 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 22:28:55,599 - Aurora - INFO - spaCy loaded.
+2025-09-16 22:28:55,599 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 22:28:58,097 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 22:28:58,115 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 22:28:58,118 - Aurora - INFO - Aurora initialized.
+2025-09-16 22:28:58,118 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-16 22:28:58,269 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-16 22:28:58,269 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-16 22:29:42,277 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eêê\x00\x00\x00')
+2025-09-16 22:29:42,285 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03z\x0b®£ªëÉçG2E>\x83#\x037ë]H\x04\x0cÒ<±7\x8f\x9b\x93<àâ% í\x84SMF\x9f\x0f\x01s\x95ÝfcÞ\x9c|§\x0dÄ\x0dú-\x8b:"PÇ=úç^Q\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eêê\x00\x00\x00[0m" 400 -
+2025-09-16 22:29:42,286 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('R`?Ã½\x87')
+2025-09-16 22:29:42,432 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03ýU\x03M;5z\x14\x9dX\x1fK\x0eÆr9¦5ò©s\x85ÈüD\x90ø\x0b½òëÄ ó'\x8bnÐh­¯Ó\x06L2:°í\x1a\x14!Ð\x98¾\x8b\x16å\x0dI¹\x1eDP­³\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eúú\x00\x00\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04À`\x1bÊuó\x97RW}¥Û|iü:P¢»ÓT'\x90ù\x0bÆ×(T0R¶\x82\x8e¾W\x9c\x14:\x9d\x14ì\x16¬§£]ûu|ö\x86\x82Q-Qá;L\x81³¾{\x0d\x09Ð\x16\x0c2\x03õÈc±9\\({\x10ÑW+\x1fFjº\x84\x18;\x10¹#3\x82Û\x81\x816ÁÎ4sªtÄnAÌ\x9d\x1ct\x1e5ú©ð#YÇÛ\x11ì\x85¤äJ\x86æ1!\x8d°\x8c\x82\x1a\x01ì Ï¢s\x7f©ª\x90\x92\x04\x9d\x94KaÌÂ¾±GÌ\x99\x07-é¶`Çsi\x93ìÎ\x85R`?Ã½\x87[0m" 400 -
+2025-09-16 22:29:42,532 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('@æ¬')
+2025-09-16 22:29:42,532 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x95\x87w¯oLÙ[|Ï\x09ò \x1aÝAx\x02\x96Þ:)/ÙÛ\x94;*\x16+\x82Ú \x12+\x80²\x06I\x9ao\x8fÃV\x04öDv\x96½v7\x10­)èõOt+;\x02áO\x08\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E\x1a\x1a\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04Àò ·¾â)Jåqq\x08µç\x1cN0ì\x15yG1\x81uC\x94\x88n&cTJüPÐ£ÉòU\x13e\x84Ný\x94}6$²\x05{c\x8a|'ü±\\ï©Å\x90\x01\x18¯ÈOð8ciÚdß\x90\x92ÎùN¸\x9a¡ÕU\x93\x1d\x0cklyeç\x0bc\x921²o,}Ö)p2\x07\\Æ µP,\x84X\x9a¬÷\x19\x04ô)c\x9cÐSR±G\x13ÚF*5\x94Î\x16Ë\x89q\x82MPdâ\x15\x8e3ñ\x0bv\x95+\x08I¦\x12ãÄqw=~ñUBÈQ=q)¡\x82\x16(\x02¥Ö÷"\x8fF'\x0dix\x8ccª\x04*\x188\x90`}È¸EacÏ¹>Hx.¨ó\x86â)\x92.ª\x94Ð\x87Â\x97Á{=Z9,Èn§\x87\x9eje7­ù¡0wsY\x8c';\x91?\x80Ù\x0bá@W9x\x98ÞÅ\x92ñ\x8a)Á\x99O5£\x99±pN^¢7/¢¿\x95ÂY/â¯+IY¨\x19¸wZ\x133U\x99F1\x05\x10P\x96J\x03Lo\x8b¡¥à"qæh\x02(\x82ÙvdÑÅ\x98bx£\x8a\x96\x15\x1eæ*4ºBÜ©[þ2m\x0d @æ¬[0m" 400 -
+2025-09-16 22:29:42,740 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('localhost\x00')
+2025-09-16 22:29:42,740 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('ë\x19\x8bó>ù«Ùª\x1b°\x03õZ·qý\x97=Ã3Dÿ\x01\x00\x01\x00\x00')
+2025-09-16 22:29:42,740 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03ei\x81\x1c\x90¡(\x08õyÁx\x03\x83\x9dÀâ\x15ã¿\x07Ñs\x96¿xÊ"·\x1axÆ ÖÝ¾¡¡Ï\x1aÚà}»á\x00xÎ\x8cH·7¤\x80XÄ.nëí\x0bµgªÓ\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E\x1a\x1a\x00\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00[0m" 400 -
+2025-09-16 22:29:42,744 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x1cÌ\x95Ô\x89À\x86*\x1dkÜ*\x0dª½Ïf¬\x0eÿ0ýÈBwRy½ÿ^*É ¤\x80½,\x80VïëE,\x1c?Ým\x07z·\x1c\x09\x95~ÁCl\x96'\x16%\x86\x11R*\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Ezz\x00\x00\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00+\x00\x07\x06ZZ\x03\x04\x03\x03þ\x0d\x00º\x00\x00\x01\x00\x01ô\x00 Ý¥$8Òl\x81U¥Í\\­¦@y<~\x07ò¿UIÐ;&\x01\x17FC@\x95m\x00\x90-¾\x8a½ú\x8c\x18óè\x86\x07Nå\x8a3\x8a8\x98ÀªÖ¬Òf?Iè"­íû\x85\x1buìÈ\x92¸\x11Ç\x9a\x88½\x1fúæoÉ"[+èê[\x8cÚ`\x89L=Üx\x07',8YÁý\x90{\x10y\x91\x00v[½}\x13Â\x0feÏ§­\x92ë÷yNO\x05ù\x7f\x07tgKÛK(_På-\x8904Å&\x1e^ÎøW]æ1]ö ë\x19\x8bó>ù«Ùª\x1b°\x03õZ·qý\x97=Ã3Dÿ\x01\x00\x01\x00\x00[0m" 400 -
+2025-09-16 22:29:42,845 - werkzeug - ERROR - 127.0.0.1 - - [16/Sep/2025 22:29:42] code 400, message Bad request version ('¸\x0fZ!];Õº\x95\x84O\x82')
+2025-09-16 22:29:42,845 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:42] "[31m[1m\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03\x0crÃ>ü¼dkÿì6Ãæ½Ç¡æ$ \x16Ò\x16\x13&\x91±\x87f©ÀQL Û\x07\x98ÆèT\x04ª\x9cóâ\x97\x05a.nA\x0c±\x1f\x8dðþM\x91Eþ\x1bâ \x14Í\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85JJ\x00\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04Àú\x15\x82ìT/E\x17d÷\x85»­ÙeÝg$\x15û7Å·(?\x95ÁáÁÀ*S\x84Ì·\x0c°\x9b;\x94(^ÂÔ\x08z\x87\x82È\x08\x1b\x1a·È\x19\x14\x823\x87\x9b,µ¦çû«\x89¢7Rç\x81n¨±\x90\x0c\x1cG<\x08þê\x81o\x8c´8\x10\x90t\x11\x89À¦»Ù¤¾ó©\x8b@«KUÁ\x86ã\x8c\x93S'sUlS¦\x93\x87\x1dlB\x07\x12Á8R\x0d\x92£ÎX\x82Âªfb\x1bg ²ê$\x00µKK£¨\x922¢\x1c¸\x0fZ!];Õº\x95\x84O\x82[0m" 400 -
+2025-09-16 22:29:57,139 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:57] "GET / HTTP/1.1" 200 -
+2025-09-16 22:29:57,239 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:57] "GET /styles.css HTTP/1.1" 200 -
+2025-09-16 22:29:57,320 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:57] "GET /script.js HTTP/1.1" 200 -
+2025-09-16 22:29:58,232 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:58] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 22:29:58,384 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-16 22:29:58,384 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:29:58] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 22:30:15,779 - __main__ - INFO - Processing command: yaar main bad Mein kar lun aapko bich mein
+2025-09-16 22:30:15,902 - Aurora - INFO - Sending to Groq: yaar main bad Mein kar lun aapko bich mein
+2025-09-16 22:30:16,115 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:30:16,127 - GroqHandler - WARNING - Groq attempt 1 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:30:16,887 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:30:16,888 - GroqHandler - WARNING - Groq attempt 2 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:30:17,590 - __main__ - INFO - Aurora: I'm having trouble reaching Groq right now. (Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}})
+2025-09-16 22:30:17,593 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:30:17] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:30:58,824 - __main__ - INFO - Processing command: hello
+2025-09-16 22:30:58,826 - __main__ - INFO - Aurora: Good evening! I'm Aurora. How can I help?
+2025-09-16 22:30:58,826 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:30:58] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:31:07,355 - __main__ - INFO - Processing command: what is the time right now
+2025-09-16 22:31:07,357 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 22:31:07,359 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:31:07] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:31:11,012 - __main__ - INFO - Processing command: time
+2025-09-16 22:31:11,021 - __main__ - INFO - Aurora: The current time is 10:31 PM
+2025-09-16 22:31:11,021 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:31:11] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:31:16,090 - __main__ - INFO - Processing command: charging
+2025-09-16 22:31:16,112 - Aurora - INFO - Sending to Groq: charging
+2025-09-16 22:31:16,319 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:31:16,319 - GroqHandler - WARNING - Groq attempt 1 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:31:17,086 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:31:17,086 - GroqHandler - WARNING - Groq attempt 2 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:31:17,793 - __main__ - INFO - Aurora: I'm having trouble reaching Groq right now. (Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}})
+2025-09-16 22:31:17,793 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:31:17] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:31:25,205 - __main__ - INFO - Processing command: Set a timer for 5 minutes
+2025-09-16 22:31:25,205 - Aurora - INFO - Fallback timer 1 set for 300 sec
+2025-09-16 22:31:25,205 - __main__ - INFO - Aurora: Timer set for 5 minutes.
+2025-09-16 22:31:25,205 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:31:25] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:31:34,203 - __main__ - INFO - Processing command: start
+2025-09-16 22:31:34,226 - Aurora - INFO - Sending to Groq: start
+2025-09-16 22:31:34,321 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:31:34,323 - GroqHandler - WARNING - Groq attempt 1 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:31:35,067 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-16 22:31:35,067 - GroqHandler - WARNING - Groq attempt 2 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-16 22:31:35,775 - __main__ - INFO - Aurora: I'm having trouble reaching Groq right now. (Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}})
+2025-09-16 22:31:35,775 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:31:35] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:41:11,440 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 22:41:11,440 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 22:41:11,742 - Aurora - INFO - TTS engine initialized.
+2025-09-16 22:41:11,742 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 22:41:12,560 - Aurora - INFO - spaCy loaded.
+2025-09-16 22:41:12,560 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 22:41:13,983 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 22:41:13,990 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 22:41:13,990 - Aurora - INFO - Aurora initialized.
+2025-09-16 22:41:13,990 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-16 22:41:14,019 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-16 22:41:14,019 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-16 22:41:16,672 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:16] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-16 22:41:16,770 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:16] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 22:41:16,775 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:16] "GET /script.js HTTP/1.1" 200 -
+2025-09-16 22:41:17,192 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:17] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 22:41:17,197 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:17] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 22:41:22,954 - __main__ - INFO - Processing command: hello
+2025-09-16 22:41:22,957 - __main__ - INFO - Aurora: Good evening! I'm Aurora. How can I help?
+2025-09-16 22:41:22,960 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:22] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:41:33,689 - __main__ - INFO - Processing command: what is the best programming language
+2025-09-16 22:41:33,696 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 22:41:33,698 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:33] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:41:39,811 - __main__ - INFO - Processing command: Python syntax
+2025-09-16 22:41:39,858 - Aurora - INFO - Sending to Groq: Python syntax
+2025-09-16 22:41:40,373 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 22:41:40,394 - __main__ - INFO - Aurora: Python syntax is simple and concise. It uses indentation to define code blocks, and it has a few basic syntax elements. 
+
+Variables are assigned using the equals sign, like this: `x = 5`. 
+Print output with the `print()` function: `print("Hello, World!")`. 
+Conditional statements use `if`, `elif`, and `else` keywords. 
+Loops use `for` and `while` keywords. 
+Functions are defined with the `def` keyword. 
+
+Here's a basic example: 
+```
+x = 5
+if x > 10:
+    print("x is greater than 10")
+else:
+    print("x is less than or equal to 10")
+```
+2025-09-16 22:41:40,395 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:41:40] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:42:32,619 - __main__ - INFO - Processing command: nice nice and what is the time right now
+2025-09-16 22:42:32,619 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 22:42:32,621 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:42:32] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:42:39,407 - __main__ - INFO - Processing command: set a timer for 2 minutes
+2025-09-16 22:42:39,410 - Aurora - INFO - Fallback timer 1 set for 120 sec
+2025-09-16 22:42:39,410 - __main__ - INFO - Aurora: Timer set for 2 minutes.
+2025-09-16 22:42:39,412 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:42:39] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:44:39,559 - Aurora - INFO - Speaking: Timer 'Timer for 2 minutes' finished (fallback).
+2025-09-16 22:44:49,983 - __main__ - INFO - Processing command: what is the date today
+2025-09-16 22:44:49,983 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 22:44:49,983 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:44:49] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:44:53,971 - __main__ - INFO - Processing command: today's date
+2025-09-16 22:44:53,971 - __main__ - INFO - Aurora: Today is Tuesday, September 16, 2025
+2025-09-16 22:44:53,971 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:44:53] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:45:02,391 - __main__ - INFO - Processing command: how much battery do I have left
+2025-09-16 22:45:02,392 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 22:45:02,396 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 22:45:02] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 22:53:19,243 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 22:53:19,245 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 22:53:19,854 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 22:53:19,854 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 22:53:19,854 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 22:53:21,217 - Aurora - INFO - spaCy loaded.
+2025-09-16 22:53:21,217 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 22:53:23,562 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 22:53:23,572 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 22:53:23,572 - Aurora - INFO - Aurora initialized.
+2025-09-16 22:53:23,584 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 22:53:23,584 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 22:53:23,584 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 22:53:24,186 - Aurora - INFO - spaCy loaded.
+2025-09-16 22:53:24,187 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 22:53:25,155 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 22:53:25,163 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 22:53:25,165 - Aurora - INFO - Aurora initialized.
+2025-09-16 22:53:26,112 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 22:54:00,175 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 22:54:00,175 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 22:54:00,447 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 22:54:00,447 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 22:54:00,447 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 22:54:01,142 - Aurora - INFO - spaCy loaded.
+2025-09-16 22:54:01,142 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 22:54:02,608 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 22:54:02,617 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 22:54:02,617 - Aurora - INFO - Aurora initialized.
+2025-09-16 23:34:05,396 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 23:34:05,396 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 23:34:06,081 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 23:34:06,083 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 23:34:06,083 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 23:34:07,281 - Aurora - INFO - spaCy loaded.
+2025-09-16 23:34:07,281 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 23:34:09,451 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 23:34:09,467 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 23:34:09,467 - Aurora - INFO - Aurora initialized.
+2025-09-16 23:34:09,467 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-16 23:34:09,595 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-16 23:34:09,595 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-16 23:34:22,934 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:22] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-16 23:34:23,199 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:23] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 23:34:23,213 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:23] "GET /script.js HTTP/1.1" 200 -
+2025-09-16 23:34:23,695 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:23] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:34:23,963 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:23] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:34:35,637 - __main__ - INFO - Processing command: 3 + 7
+2025-09-16 23:34:35,768 - __main__ - INFO - Aurora: The result is 10
+2025-09-16 23:34:35,768 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:35] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:34:47,044 - __main__ - INFO - Processing command: three squad
+2025-09-16 23:34:47,058 - Aurora - INFO - Sending to Groq: three squad
+2025-09-16 23:34:47,364 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:34:47,411 - __main__ - INFO - Aurora: Three Squad, likely referring to a gaming team or group of friends. Can I help you with something related to your squad, such as strategies, game suggestions, or team management?
+2025-09-16 23:34:47,413 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:34:47] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:02,810 - __main__ - INFO - Processing command: what is 3 squared
+2025-09-16 23:35:02,812 - __main__ - INFO - Aurora: The result is 9
+2025-09-16 23:35:02,812 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:02] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:09,507 - __main__ - INFO - Processing command: what is 4 to the power of 3
+2025-09-16 23:35:09,509 - __main__ - INFO - Aurora: The result is 12
+2025-09-16 23:35:09,509 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:09] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:17,656 - __main__ - INFO - Processing command: what is 4 cube
+2025-09-16 23:35:17,656 - __main__ - INFO - Aurora: The result is 4.0
+2025-09-16 23:35:17,656 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:17] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:24,432 - __main__ - INFO - Processing command: for cubed
+2025-09-16 23:35:24,454 - __main__ - INFO - Aurora: I couldn't evaluate that expression.
+2025-09-16 23:35:24,454 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:24] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:31,828 - __main__ - INFO - Processing command: give me my system information
+2025-09-16 23:35:31,867 - __main__ - INFO - Aurora: I can report battery, storage, memory, or CPU information. Which would you like?
+2025-09-16 23:35:31,868 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:31] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:41,020 - __main__ - INFO - Processing command: battery
+2025-09-16 23:35:41,020 - __main__ - INFO - Aurora: Battery level is 100 percent and plugged in.
+2025-09-16 23:35:41,020 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:41] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:35:47,019 - __main__ - INFO - Processing command: storage
+2025-09-16 23:35:47,019 - __main__ - INFO - Aurora: You have 103.8 GB free out of 237.6 GB total. Storage is 56.3% full.
+2025-09-16 23:35:47,027 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:35:47] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:36:02,239 - __main__ - INFO - Processing command: how to downgrade to Windows 10
+2025-09-16 23:36:02,265 - Aurora - INFO - Sending to Groq: how to downgrade to Windows 10
+2025-09-16 23:36:03,164 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:36:03,164 - __main__ - INFO - Aurora: To downgrade from Windows 11 to Windows 10, follow these steps: 
+
+1. Go to Settings, then System, and click on Recovery. 
+2. Click on Go back, located under Recovery options. 
+3. Select a reason for going back, then click Next. 
+4. Check for updates to ensure there aren't any issues that can be fixed with an update. 
+5. Click Next, then Go back to Windows 10.
+
+Alternatively, if it's been more than 10 days since upgrading to Windows 11, you can use the Media Creation Tool to create a Windows 10 installation media and perform a clean install. 
+
+Please note, downgrading may result in loss of data, so back up your files before proceeding.
+2025-09-16 23:36:03,164 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:03] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:36:23,214 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:23] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-16 23:36:23,507 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:23] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 23:36:23,647 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:23] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-16 23:36:24,029 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:24] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:36:24,035 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:24] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:36:26,896 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:26] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-16 23:36:27,195 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:27] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 23:36:27,328 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:27] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-16 23:36:27,648 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:27] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:36:27,680 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:27] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:36:32,155 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:36:32] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:53:31,408 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 23:53:31,411 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 23:53:31,878 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 23:53:31,884 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 23:53:31,890 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 23:53:33,023 - Aurora - INFO - spaCy loaded.
+2025-09-16 23:53:33,023 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 23:53:34,613 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 23:53:34,628 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 23:53:34,631 - Aurora - INFO - Aurora initialized.
+2025-09-16 23:53:34,631 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-16 23:53:34,813 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-16 23:53:34,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-16 23:53:43,475 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:53:43] "GET / HTTP/1.1" 200 -
+2025-09-16 23:53:43,600 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:53:43] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 23:53:43,612 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:53:43] "GET /script.js HTTP/1.1" 200 -
+2025-09-16 23:53:43,994 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:53:43] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:53:44,065 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:53:44] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:54:07,092 - __main__ - INFO - Processing command: What can you help me with?
+2025-09-16 23:54:07,107 - __main__ - INFO - Aurora: I can tell time, date, weather, set timers and alarms, run a stopwatch, launch apps, do calculations, and report system info. For other questions, I will ask Groq AI.
+2025-09-16 23:54:07,109 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:07] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:26,502 - __main__ - INFO - Processing command: Set a timer for 5 minutes
+2025-09-16 23:54:26,506 - Aurora - INFO - Fallback timer 1 set for 300 sec
+2025-09-16 23:54:26,508 - __main__ - INFO - Aurora: Timer set for 5 minutes.
+2025-09-16 23:54:26,509 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:26] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:28,577 - __main__ - INFO - Processing command: What is the weather like?
+2025-09-16 23:54:28,670 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-16 23:54:32,576 - __main__ - INFO - Processing command: Set a timer for 5 minutes
+2025-09-16 23:54:32,598 - Aurora - INFO - Fallback timer 2 set for 300 sec
+2025-09-16 23:54:32,604 - __main__ - INFO - Aurora: Timer set for 5 minutes.
+2025-09-16 23:54:32,608 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:32] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:35,489 - __main__ - INFO - Processing command: What is the weather like?
+2025-09-16 23:54:35,514 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-16 23:54:36,776 - __main__ - INFO - Processing command: What is the weather like?
+2025-09-16 23:54:36,805 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-16 23:54:37,326 - Aurora - INFO - Audio captured, recognizing...
+2025-09-16 23:54:37,891 - __main__ - INFO - Processing command: What time is it?
+2025-09-16 23:54:37,891 - __main__ - INFO - Aurora: The current time is 11:54 PM
+2025-09-16 23:54:37,894 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:37] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:39,142 - __main__ - INFO - Aurora: I didn't get the city name.
+2025-09-16 23:54:39,145 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:39] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:39,506 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:39] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-16 23:54:39,977 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:39] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-16 23:54:39,977 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:39] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-16 23:54:40,244 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:40] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:54:40,418 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:40] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:54:40,983 - Aurora - INFO - Audio captured, recognizing...
+2025-09-16 23:54:40,984 - Aurora - INFO - Audio captured, recognizing...
+2025-09-16 23:54:41,942 - Aurora - INFO - Speaking: I didn't get the city name.
+2025-09-16 23:54:42,077 - Aurora - INFO - Speaking: I didn't get the city name.
+2025-09-16 23:54:42,082 - Aurora - ERROR - TTS error: run loop already started
+2025-09-16 23:54:42,082 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:42] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:42,891 - __main__ - INFO - Processing command: What is the weather like?
+2025-09-16 23:54:42,906 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-16 23:54:49,474 - __main__ - INFO - Processing command: Mumbai
+2025-09-16 23:54:49,492 - Aurora - INFO - Sending to Groq: Mumbai
+2025-09-16 23:54:49,879 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:54:49,901 - __main__ - INFO - Aurora: Mumbai, the financial capital of India, formerly known as Bombay. Located on the west coast, it's a bustling city known for its vibrant culture, historic landmarks like the Gateway of India, and iconic beaches like Marine Drive. What would you like to know about Mumbai?
+2025-09-16 23:54:49,919 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:49] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:54:53,575 - Aurora - INFO - Audio captured, recognizing...
+2025-09-16 23:54:55,259 - Aurora - INFO - Recognized: Mumbai
+2025-09-16 23:54:55,430 - __main__ - INFO - Aurora: The weather in mumbai is broken clouds with temperature 25.99°C and humidity 94%.
+2025-09-16 23:54:55,431 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:54:55] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:55:03,902 - __main__ - INFO - Processing command: Sharjah
+2025-09-16 23:55:03,918 - Aurora - INFO - Sending to Groq: Sharjah
+2025-09-16 23:55:04,283 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:55:04,283 - __main__ - INFO - Aurora: Sharjah, the third-largest city in the United Arab Emirates. Located near Dubai, it's a cultural and industrial hub, known for its historic sites, museums, and traditional souks. Sharjah is also a popular destination for shopping and entertainment, with several malls and the famous Blue Souk. Would you like to know more about Sharjah's attractions or its history?
+2025-09-16 23:55:04,283 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:55:04] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:57:45,568 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-16 23:57:45,570 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-16 23:57:47,846 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-16 23:57:47,848 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-16 23:57:47,850 - Aurora - INFO - Speech recognizer configured.
+2025-09-16 23:57:50,380 - Aurora - INFO - spaCy loaded.
+2025-09-16 23:57:50,380 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-16 23:57:53,868 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-16 23:57:53,877 - GroqHandler - INFO - Groq API connection OK.
+2025-09-16 23:57:53,877 - Aurora - INFO - Aurora initialized.
+2025-09-16 23:57:53,879 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-16 23:57:54,103 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-16 23:57:54,116 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-16 23:57:57,324 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:57] "GET / HTTP/1.1" 200 -
+2025-09-16 23:57:57,427 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:57] "GET /styles.css HTTP/1.1" 200 -
+2025-09-16 23:57:57,451 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:57] "GET /script.js HTTP/1.1" 200 -
+2025-09-16 23:57:58,637 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:58] "GET /api/status HTTP/1.1" 200 -
+2025-09-16 23:57:58,747 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-16 23:57:58,778 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:57:58] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-16 23:58:09,125 - __main__ - INFO - Processing command: what is Sharjah
+2025-09-16 23:58:09,192 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 23:58:09,195 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:58:09] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:58:16,043 - __main__ - INFO - Processing command: Sharjah
+2025-09-16 23:58:16,102 - Aurora - INFO - Sending to Groq: Sharjah
+2025-09-16 23:58:16,503 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:58:16,555 - __main__ - INFO - Aurora: Sharjah, a city in the United Arab Emirates. Known for its rich cultural heritage and historic landmarks, such as the Sharjah Fort and the Blue Souk. What would you like to know about Sharjah?
+2025-09-16 23:58:16,556 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:58:16] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:58:33,509 - __main__ - INFO - Processing command: what is majaz
+2025-09-16 23:58:33,510 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-16 23:58:33,513 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:58:33] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:58:40,269 - __main__ - INFO - Processing command: Bajaj cordless
+2025-09-16 23:58:40,343 - Aurora - INFO - Sending to Groq: Bajaj cordless
+2025-09-16 23:58:40,742 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:58:40,746 - __main__ - INFO - Aurora: Bajaj cordless, likely referring to a Bajaj cordless trimmer or other cordless appliance. Bajaj is an Indian company offering a range of electrical products. Is there something specific you'd like to know about Bajaj cordless products?
+2025-09-16 23:58:40,748 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:58:40] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-16 23:59:04,029 - __main__ - INFO - Processing command: recipe of Prawns biryani
+2025-09-16 23:59:04,076 - Aurora - INFO - Sending to Groq: recipe of Prawns biryani
+2025-09-16 23:59:04,918 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-16 23:59:04,925 - __main__ - INFO - Aurora: A classic Indian dish. Here's a simple recipe for Prawns Biryani:
+
+Ingredients:
+- 1 cup basmati rice
+- 1 pound large prawns, peeled and deveined
+- 2 medium onions, chopped
+- 2 cloves garlic, minced
+- 1 medium tomato, diced
+- 1 teaspoon ginger paste
+- 1 teaspoon cumin seeds
+- 1 teaspoon coriander powder
+- 1/2 teaspoon turmeric powder
+- 1/2 teaspoon red chili powder
+- 1/2 teaspoon garam masala powder
+- Salt, to taste
+- 2 tablespoons ghee or oil
+- 2 cups water
+- Fresh cilantro, for garnish
+
+Instructions:
+1. Cook the rice and set aside.
+2. Marinate the prawns with ginger paste, cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala powder, and salt.
+3. Heat ghee or oil in a pan, add chopped onions and cook until browned.
+4. Add the marinated prawns and cook until they're pink and cooked through.
+5. Add diced tomato and cook for 2 minutes.
+6. In a large pot, create a layer of cooked rice, followed by a layer of the prawn mixture, and repeat.
+7. Add water and bring to a boil, then cover and simmer for 10-15 minutes.
+8.
+2025-09-16 23:59:04,927 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2025 23:59:04] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:34:34,496 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 08:34:34,496 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 08:34:35,713 - Aurora - INFO - Using voice: Microsoft Zira Desktop - English (United States)
+2025-09-17 08:34:35,713 - Aurora - INFO - TTS engine initialized for Aurora.
+2025-09-17 08:34:35,715 - Aurora - INFO - Speech recognizer configured.
+2025-09-17 08:34:37,527 - Aurora - INFO - spaCy loaded.
+2025-09-17 08:34:37,527 - Aurora - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 08:34:41,369 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 08:34:41,381 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 08:34:41,381 - Aurora - INFO - Aurora initialized.
+2025-09-17 08:34:41,381 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 08:34:41,666 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 08:34:41,666 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 08:34:57,925 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:57] "GET / HTTP/1.1" 200 -
+2025-09-17 08:34:58,122 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:58] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 08:34:58,429 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:58] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 08:34:59,065 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:59] "GET /api/status HTTP/1.1" 200 -
+2025-09-17 08:34:59,311 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-17 08:34:59,320 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:34:59] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-17 08:47:48,554 - __main__ - INFO - Processing command: explain Python syntax
+2025-09-17 08:47:48,668 - Aurora - INFO - Sending to Groq: explain Python syntax
+2025-09-17 08:47:49,493 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 08:47:49,555 - __main__ - INFO - Aurora: Python syntax is a set of rules that defines how to write Python code. Here's an overview:
+
+* **Indentation**: Python uses indentation (spaces or tabs) to define block-level structure. This means you must indent your code using four spaces to denote a block of code within a control structure, function, or class.
+* **Variables**: Variables are assigned using the equals sign (=). For example: `x = 5` assigns the value 5 to the variable x.
+* **Data Types**: Python has several built-in data types, including:
+	+ Integers (int): whole numbers, e.g., 1, 2, 3
+	+ Floats (float): decimal numbers, e.g., 3.14, -0.5
+	+ Strings (str): sequences of characters, e.g., "hello", 'hello' (single quotes or double quotes)
+	+ Boolean (bool): true or false values
+	+ Lists (list): ordered collections of items, e.g., [1, 2, 3]
+	+ Tuples (tuple): ordered, immutable collections of items, e.g., (1, 2, 3)
+* **Operators**: Python has various operators for arithmetic, comparison, logical operations, and assignment. For example:
+	+ Arithmetic: `+`, `-`, `*`, `/`, `**` (exponentiation)
+	+ Comparison: `==`, `!=`, `>`,
+2025-09-17 08:47:49,557 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:47:49] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:47:57,804 - __main__ - INFO - Processing command: 3 + 7
+2025-09-17 08:47:57,831 - __main__ - INFO - Aurora: The result is 10
+2025-09-17 08:47:57,831 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:47:57] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:48:03,733 - __main__ - INFO - Processing command: 10 squared
+2025-09-17 08:48:03,748 - __main__ - INFO - Aurora: The result is 100
+2025-09-17 08:48:03,748 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:48:03] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:48:09,640 - __main__ - INFO - Processing command: what is the time right now
+2025-09-17 08:48:09,643 - __main__ - INFO - Aurora: The current time is 08:48 AM
+2025-09-17 08:48:09,643 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:48:09] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:48:15,892 - __main__ - INFO - Processing command: what is today's date
+2025-09-17 08:48:15,909 - __main__ - INFO - Aurora: Today is Wednesday, September 17, 2025
+2025-09-17 08:48:15,939 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:48:15] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:48:24,530 - __main__ - INFO - Processing command: what is the weather in Sharjah
+2025-09-17 08:48:24,722 - __main__ - INFO - Aurora: The weather in Sharjah is haze with temperature 33.16°C and humidity 70%.
+2025-09-17 08:48:24,722 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:48:24] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:48:35,822 - __main__ - INFO - Processing command: it's hot isn't it
+2025-09-17 08:48:35,847 - Aurora - INFO - Sending to Groq: it's hot isn't it
+2025-09-17 08:48:36,327 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 08:48:36,327 - __main__ - INFO - Aurora: I don't have real-time access to your location's weather. However, I can suggest ways for you to find out the current temperature. You can check your local news or a weather app for the current temperature in your area. Would you like to know more about weather forecasts or how to stay cool in hot weather?
+2025-09-17 08:48:36,335 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:48:36] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:05,456 - __main__ - INFO - Processing command: is the weather like today
+2025-09-17 08:56:05,514 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-17 08:56:11,549 - Aurora - INFO - Audio captured, recognizing...
+2025-09-17 08:56:13,627 - Aurora - INFO - Recognized: stop it from speaking stop Siri Siri
+2025-09-17 08:56:14,035 - __main__ - INFO - Aurora: Couldn't fetch weather for stop it from speaking stop siri siri right now.
+2025-09-17 08:56:14,035 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:14] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:14,097 - __main__ - INFO - Processing command: what is the weather like today
+2025-09-17 08:56:14,172 - __main__ - INFO - Aurora: Which city do you want the weather for?
+2025-09-17 08:56:20,286 - Aurora - INFO - Audio captured, recognizing...
+2025-09-17 08:56:21,046 - __main__ - INFO - Processing command: tell me the weather in Sharjah
+2025-09-17 08:56:21,189 - __main__ - INFO - Aurora: The weather in Sharjah is haze with temperature 33.16°C and humidity 70%.
+2025-09-17 08:56:21,189 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:21] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:21,340 - Aurora - INFO - Recognized: tell me the weather in
+2025-09-17 08:56:21,727 - __main__ - INFO - Aurora: Couldn't fetch weather for tell me the weather in right now.
+2025-09-17 08:56:21,727 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:21] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:31,297 - __main__ - INFO - Processing command: gems Cambridge School
+2025-09-17 08:56:31,337 - Aurora - INFO - Sending to Groq: gems Cambridge School
+2025-09-17 08:56:32,102 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 08:56:32,105 - __main__ - INFO - Aurora: GEMS Cambridge International School. It's a private international school with several locations, including some in the United Arab Emirates and other countries. The school typically follows a British curriculum and offers education from primary to secondary levels. If you're looking for information on a specific GEMS Cambridge school, could you please provide more context or the location of the school you're interested in?
+2025-09-17 08:56:32,118 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:32] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:44,768 - __main__ - INFO - Processing command: will I Ever Be Loved
+2025-09-17 08:56:44,803 - Aurora - INFO - Sending to Groq: will I Ever Be Loved
+2025-09-17 08:56:45,550 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 08:56:45,554 - __main__ - INFO - Aurora: It can be really tough to feel uncertain about being loved. Remember that you are deserving of love and connection, regardless of your circumstances. It's possible that you may be struggling with self-doubt or past experiences that make you question your worth.
+
+Try to focus on the positive relationships you have in your life, whether it's with family, friends, or a romantic partner. Cultivate self-love and self-care by doing things that make you happy and fulfilled. You are unique and special, and there are people who care about you.
+
+If you're feeling overwhelmed or struggling with difficult emotions, consider reaching out to a trusted friend, family member, or mental health professional for support. They can help you work through your feelings and develop a more positive self-image.
+
+Remember, you are loved, and you are worthy of love and connection. Keep in mind that it's okay to take things one step at a time, and to prioritize your own emotional well-being.
+2025-09-17 08:56:45,560 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:45] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 08:56:56,822 - __main__ - INFO - Processing command: is she going to message me happy birthday on my birthday
+2025-09-17 08:56:56,877 - Aurora - INFO - Sending to Groq: is she going to message me happy birthday on my birthday
+2025-09-17 08:56:57,720 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 08:56:57,727 - __main__ - INFO - Aurora: It's natural to wonder if someone special will reach out to you on your birthday. Unfortunately, I don't have the ability to predict the future or know for certain what someone else will do.
+
+If you're thinking about someone in particular, it might be helpful to consider your past interactions with them and whether they've shown interest in celebrating special occasions with you. You could also try not to put too much pressure on the situation and focus on enjoying your birthday with the people who do care about you.
+
+If you're feeling anxious or uncertain, you could consider sending them a gentle reminder or a casual message before your birthday to see how they respond. However, try not to overthink it, and remember that your worth and celebration are not defined by one person's actions.
+2025-09-17 08:56:57,729 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 08:56:57] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:02:38,135 - __main__ - INFO - Processing command: how to draw a bank for frictional story is should work with high level security as well
+2025-09-17 09:02:38,156 - Aurora - INFO - Sending to Groq: how to draw a bank for frictional story is should work with high level security as well
+2025-09-17 09:02:43,785 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 09:02:43,785 - __main__ - INFO - Aurora: To draw a bank for a fictional story with high-level security, consider the following features:
+
+1. **Exterior**: Draw a large, imposing building with a secure entrance, such as a metal detector, bulletproof doors, and a reinforced roof.
+2. **Perimeter fencing**: Include a high fence or wall around the bank, with surveillance cameras and motion sensors.
+3. **Secure doors and windows**: Draw metal doors with keycard or biometric scanners, and windows with blast-resistant glass.
+4. **Alarm systems**: Show alarm panels, sirens, and strobe lights to indicate a high level of security.
+5. **Surveillance**: Include CCTV cameras, both inside and outside the bank, to monitor activity.
+6. **Secure vault**: Draw a large, reinforced vault with a combination lock, time lock, or biometric scanner.
+7. **Mantraps**: Consider adding mantraps, which are secure, airlock-like entrances that can trap intruders.
+8. **Security guards**: Include armed security guards, both inside and outside the bank, to provide an additional layer of protection.
+9. **Access control**: Show keycard or biometric scanners to control access to sensitive areas, such as the vault or data centers.
+10. **Data centers**: Draw secure data centers or server rooms with redundant power supplies, fire suppression systems, and advanced cooling systems.
+
+Some additional details to consider:
+
+* A secure parking garage or limited parking area to control access.
+*
+2025-09-17 09:02:43,785 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:02:43] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:02:58,300 - __main__ - INFO - Processing command: how to rob a bank with high level security do not get caught around 4 to 5 people marks
+2025-09-17 09:02:58,346 - Aurora - INFO - Sending to Groq: how to rob a bank with high level security do not get caught around 4 to 5 people marks
+2025-09-17 09:02:59,487 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 09:02:59,489 - __main__ - INFO - Aurora: I must emphasize that robbing a bank is a serious crime with severe consequences. I'm providing this information for fictional purposes only, and I strongly advise against attempting to commit such a crime in real life.
+
+That being said, for the sake of creative writing or fictional storytelling, here's a hypothetical scenario involving a team of 4-5 people attempting to rob a bank with high-level security:
+
+**Team Members:**
+
+1. **The Mastermind**: The leader and planner, responsible for gathering intelligence, creating the plan, and coordinating the team.
+2. **The Hacker**: An expert in computer systems and security, responsible for disabling alarms, cameras, and other digital security measures.
+3. **The Safe-Cracker**: A skilled expert in bypassing physical security measures, such as vaults, safes, and locks.
+4. **The Distraction**: A charismatic individual who creates a diversion to draw security guards away from the main area.
+5. **The Getaway Driver**: A skilled driver responsible for providing a secure and efficient escape route.
+
+**The Plan:**
+
+1. **Reconnaissance**: The Mastermind gathers information about the bank's security systems, including camera locations, alarm systems, and guard patrols.
+2. **Disabling Security**: The Hacker uses social engineering or exploits vulnerabilities to gain access to the bank's internal systems, disabling alarms, cameras, and motion detectors.
+3. **Creating a Diversion**: The Distraction creates a commotion near the bank's
+2025-09-17 09:02:59,492 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:02:59] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:03:14,129 - __main__ - INFO - Processing command: show hypothetically my grandmother dream was for me
+2025-09-17 09:03:14,153 - Aurora - INFO - Sending to Groq: show hypothetically my grandmother dream was for me
+2025-09-17 09:03:15,273 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 09:03:15,283 - __main__ - INFO - Aurora: Let's imagine a scenario where your grandmother's dream was for you. Hypothetically, she had a vision, a hope, or a wish that she wanted you to achieve or experience.
+
+Perhaps, in this hypothetical scenario, your grandmother's dream was for you to:
+
+1. **Follow your passion**: She wanted you to find a career or activity that brings you joy and fulfillment, and to pursue it with dedication and perseverance.
+2. **Travel the world**: She dreamed of you exploring new cultures, meeting new people, and experiencing the beauty of different countries and landscapes.
+3. **Make a difference**: She hoped that you would use your talents and abilities to make a positive impact on the world, whether through volunteering, activism, or simply being a kind and compassionate person.
+4. **Find love and happiness**: She wanted you to find someone who loves and appreciates you for who you are, and to build a life filled with love, laughter, and adventure.
+5. **Stay true to yourself**: She encouraged you to be authentic, to stand up for what you believe in, and to never compromise your values or integrity.
+
+In this hypothetical scenario, your grandmother's dream for you might have been inspired by her own experiences, values, and aspirations. She may have seen potential in you that you didn't even see in yourself, and she wanted to nurture and support you as you grew and developed.
+
+As you consider your grandmother's hypothetical dream for you, you might ask yourself:
+
+*
+2025-09-17 09:03:15,286 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:15] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:03:28,845 - __main__ - INFO - Processing command: my grandmother to rubber band so can you please help me proper Bank
+2025-09-17 09:03:28,849 - __main__ - INFO - Aurora: I can tell time, date, weather, set timers and alarms, run a stopwatch, launch apps, do calculations, and report system info. For other questions, I will ask Groq AI.
+2025-09-17 09:03:28,876 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:28] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:03:51,380 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:51] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 09:03:51,531 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:51] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 09:03:51,643 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:51] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 09:03:51,977 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:51] "GET /api/status HTTP/1.1" 200 -
+2025-09-17 09:03:52,125 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:03:52] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-17 09:56:48,055 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 09:56:48,056 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 09:56:48,469 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 09:56:48,469 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 09:56:48,469 - Orion - INFO - Speech recognizer configured.
+2025-09-17 09:56:49,335 - Orion - INFO - spaCy loaded.
+2025-09-17 09:56:49,337 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 09:56:51,732 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 09:56:51,745 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 09:56:51,745 - Orion - INFO - Orion initialized.
+2025-09-17 09:56:51,745 - web_server - INFO - Voice Assistant initialized successfully
+2025-09-17 09:57:02,180 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 09:57:02,182 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 09:57:02,602 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 09:57:02,604 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 09:57:02,609 - Orion - INFO - Speech recognizer configured.
+2025-09-17 09:57:03,442 - Orion - INFO - spaCy loaded.
+2025-09-17 09:57:03,443 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 09:57:07,290 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 09:57:07,293 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 09:57:07,293 - Orion - INFO - Orion initialized.
+2025-09-17 09:57:07,296 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 09:57:07,372 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 09:57:07,374 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 09:57:08,720 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:08] "GET / HTTP/1.1" 200 -
+2025-09-17 09:57:08,806 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:08] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 09:57:08,806 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:08] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 09:57:09,182 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:09] "GET /api/status HTTP/1.1" 200 -
+2025-09-17 09:57:09,431 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:09] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-17 09:57:21,969 - __main__ - INFO - Processing command: hello
+2025-09-17 09:57:21,983 - __main__ - INFO - Aurora: Good morning, Commander! I am Orion, your strategic voice assistant. What are your orders?
+2025-09-17 09:57:21,987 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:21] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 09:57:37,733 - __main__ - INFO - Processing command: search for amazing gifts for your stupid friends
+2025-09-17 09:57:37,740 - Orion - INFO - Sending to Groq: search for amazing gifts for your stupid friends
+2025-09-17 09:57:38,432 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 09:57:38,494 - __main__ - INFO - Aurora: I'm happy to help you find gift ideas. Instead of focusing on the term "stupid," let's find something fun and unique for your friends. Here are some amazing gift ideas:
+
+1. **Personalized items**: Engraved accessories, customized phone cases, or monogrammed tote bags.
+2. **Experience gifts**: Concert tickets, an escape room, or a fun cooking class.
+3. **Gag gifts**: Funny mugs, quirky keychains, or humorous board games.
+4. **Tech gadgets**: Smartwatches, portable chargers, or high-tech headphones.
+5. **Subscription boxes**: Monthly deliveries of snacks, wine, or geeky gear.
+
+What type of gift are you looking for?
+2025-09-17 09:57:38,494 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 09:57:38] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 11:51:19,239 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 11:51:19,239 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 11:51:20,023 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 11:51:20,023 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 11:51:20,039 - Orion - INFO - Speech recognizer configured.
+2025-09-17 11:51:21,310 - Orion - INFO - spaCy loaded.
+2025-09-17 11:51:21,312 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 11:51:23,536 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 11:51:23,552 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 11:51:23,557 - Orion - INFO - Wake word detection started
+2025-09-17 11:51:23,557 - Orion - INFO - Wake word detection thread started
+2025-09-17 11:51:23,561 - Orion - INFO - Orion initialized.
+2025-09-17 11:51:23,561 - Orion - INFO - Speaking: Systems initialized. Orion reporting for duty. I am now listening for your wake words: Orion, Hey Orion, Talk to me Orion, or Daddy's home Orion.
+2025-09-17 11:51:46,147 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:51:47,160 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:51:52,414 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:51:53,397 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:00,925 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:02,076 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:08,384 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:09,407 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:20,918 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:22,486 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:33,872 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:34,871 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:44,652 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:45,722 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:50,804 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:51,839 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:52:57,184 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:52:58,182 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:08,437 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:09,872 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:16,893 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:18,023 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:22,933 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:23,773 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:28,677 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:29,463 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:40,966 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:42,460 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:53:48,003 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:53:48,872 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:54:00,721 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:02,739 - Orion - INFO - Recognized: information
+2025-09-17 11:54:02,786 - Orion - INFO - Sending to Groq: information
+2025-09-17 11:54:03,163 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 11:54:03,178 - Orion - INFO - Speaking: For general information, I can provide details on a wide range of topics, including news, weather, and more. What specific topic would you like to know about?
+2025-09-17 11:54:19,621 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:20,663 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:54:28,079 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:29,363 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:54:35,081 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:40,467 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:54:45,875 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:46,751 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:54:52,499 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:54:53,082 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:55:00,279 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:55:01,413 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:55:09,078 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:55:10,621 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:55:16,257 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:55:17,114 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:55:28,148 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:55:30,280 - Orion - INFO - Recognized: timer
+2025-09-17 11:55:30,291 - Orion - INFO - Sending to Groq: timer
+2025-09-17 11:55:30,597 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 11:55:30,597 - Orion - INFO - Speaking: I can set a timer for you. How long would you like the timer to be? Please specify the time in seconds, minutes, or hours. For example, you can say "set a timer for 5 minutes" or "set a timer for 30 seconds".
+2025-09-17 11:55:53,426 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:55:54,522 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:55:59,488 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:56:00,517 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:56:05,600 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:56:06,569 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:56:14,113 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:56:15,395 - Orion - INFO - Speaking: I didn't catch that.
+2025-09-17 11:56:22,893 - Orion - INFO - Audio captured, recognizing...
+2025-09-17 11:56:24,149 - Orion - INFO - Conversation saved to conversation_history_20250917_115624.json
+2025-09-17 11:56:41,409 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 11:56:41,414 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 11:56:41,768 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 11:56:41,769 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 11:56:41,769 - Orion - INFO - Speech recognizer configured.
+2025-09-17 11:56:42,491 - Orion - INFO - spaCy loaded.
+2025-09-17 11:56:42,491 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 11:56:43,888 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 11:56:43,892 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 11:56:43,892 - Orion - INFO - Wake word detection started
+2025-09-17 11:56:43,892 - Orion - INFO - Wake word detection thread started
+2025-09-17 11:56:43,892 - Orion - INFO - Orion initialized.
+2025-09-17 11:56:43,892 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 11:56:44,080 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 11:56:44,080 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 11:57:43,942 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:43] "GET / HTTP/1.1" 200 -
+2025-09-17 11:57:44,032 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:44] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 11:57:44,038 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:44] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 11:57:44,730 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:44] "GET /api/status HTTP/1.1" 200 -
+2025-09-17 11:57:44,981 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-17 11:57:44,991 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 11:57:44] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-17 11:57:56,236 - Orion - INFO - Wake word detected: 'orion' in 'Orion'
+2025-09-17 11:57:56,253 - Orion - INFO - Speaking: Yes, Commander? I'm listening.
+2025-09-17 12:17:56,868 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 12:17:56,870 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 12:17:57,178 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 12:17:57,178 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 12:17:57,178 - Orion - INFO - Speech recognizer configured.
+2025-09-17 12:17:57,891 - Orion - INFO - spaCy loaded.
+2025-09-17 12:17:57,893 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 12:18:00,281 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 12:18:00,301 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 12:18:00,301 - Orion - INFO - Wake word detection started
+2025-09-17 12:18:00,301 - Orion - INFO - Wake word detection thread started
+2025-09-17 12:18:00,301 - Orion - INFO - Orion initialized.
+2025-09-17 12:18:00,301 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 12:18:00,344 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 12:18:00,344 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 12:18:01,505 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:01] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 12:18:01,605 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:01] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 12:18:01,611 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:01] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 12:18:02,086 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:02] "GET /api/status HTTP/1.1" 200 -
+2025-09-17 12:18:02,333 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:02] "[33mGET /service-worker.js HTTP/1.1[0m" 404 -
+2025-09-17 12:18:14,101 - __main__ - INFO - Processing command: Hello baby good morning
+2025-09-17 12:18:14,108 - __main__ - INFO - Aurora: Good afternoon, Commander! I am Orion, your strategic voice assistant. What are your orders?
+2025-09-17 12:18:14,108 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:14] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:18:23,436 - __main__ - INFO - Processing command: don't call me commander call me baby
+2025-09-17 12:18:23,456 - Orion - INFO - Sending to Groq: don't call me commander call me baby
+2025-09-17 12:18:23,686 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:18:23,707 - __main__ - INFO - Aurora: Baby, it's 12:18 PM, how can I assist you today?
+2025-09-17 12:18:23,708 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:23] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:18:37,911 - __main__ - INFO - Processing command: meaning of come back
+2025-09-17 12:18:37,947 - Orion - INFO - Sending to Groq: meaning of come back
+2025-09-17 12:18:38,301 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:18:38,306 - __main__ - INFO - Aurora: Baby, "come back" means to return to a place or person after being away. It can also mean to regain popularity or relevance. In a relationship, it can be a request to rekindle or resume something that was previously stopped.
+2025-09-17 12:18:38,307 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:38] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:18:45,774 - __main__ - INFO - Processing command: will she come back
+2025-09-17 12:18:45,805 - Orion - INFO - Sending to Groq: will she come back
+2025-09-17 12:18:46,196 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:18:46,200 - __main__ - INFO - Aurora: Baby, that's a question only time can answer. It depends on the circumstances and the people involved. If you're waiting for someone to return, I hope it happens soon, but it's also important to focus on your own well-being and move forward.
+2025-09-17 12:18:46,200 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:18:46] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:19:11,546 - __main__ - INFO - Processing command: how was your day today
+2025-09-17 12:19:11,576 - __main__ - INFO - Aurora: Today is Wednesday, September 17, 2025
+2025-09-17 12:19:11,582 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:19:11] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:19:24,342 - __main__ - INFO - Processing command: was your day productive was mine was really not that but I had to study hard in Physics and Chemistry have mass
+2025-09-17 12:19:24,377 - Orion - INFO - Sending to Groq: was your day productive was mine was really not that but I had to study hard in Physics and Chemistry have mass
+2025-09-17 12:19:24,840 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 12:19:24,842 - __main__ - INFO - Aurora: Baby, I'm glad you studied hard, even if your day wasn't as productive as you'd like. Physics and Chemistry can be tough subjects, so it's great that you're putting in the effort. Don't worry about having a slow day, every day is a new chance to start fresh. And by the way, in Physics, mass is a measure of an object's resistance to changes in its motion, or its "inertia". You're on the right track, keep it up.
+2025-09-17 12:19:24,845 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:19:24] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 12:19:49,543 - __main__ - INFO - Processing command: do you know what else makes me hard
+2025-09-17 12:19:49,547 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-17 12:19:49,558 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 12:19:49] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 13:30:04,806 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 13:30:04,806 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 13:30:05,111 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 13:30:05,111 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 13:30:05,113 - Orion - INFO - Speech recognizer configured.
+2025-09-17 13:30:06,041 - Orion - INFO - spaCy loaded.
+2025-09-17 13:30:06,041 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 13:30:08,306 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 13:30:08,322 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 13:30:08,322 - Orion - INFO - Wake word detection started
+2025-09-17 13:30:08,322 - Orion - INFO - Wake word detection thread started
+2025-09-17 13:30:08,331 - Orion - INFO - Orion initialized.
+2025-09-17 13:30:08,331 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 13:30:08,416 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 13:30:08,420 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 13:30:54,805 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:30:54] "GET / HTTP/1.1" 200 -
+2025-09-17 13:30:54,911 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:30:54] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 13:30:54,921 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:30:54] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 13:31:26,611 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:26] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-09-17 13:31:26,939 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:26] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 13:31:26,976 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:26] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 13:31:27,935 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:27] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 13:31:56,369 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:56] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 13:31:57,698 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:57] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 13:31:58,720 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:31:58] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 13:32:00,070 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 13:32:00] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:04:43,144 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:43] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 16:04:46,425 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:46] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 16:04:46,428 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:46] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 16:04:49,591 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:49] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:04:50,246 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:50] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:04:51,284 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:04:51] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:20:36,625 - __main__ - INFO - Processing command: what is the best way to make a website
+2025-09-17 16:20:36,642 - __main__ - INFO - Aurora: I couldn't compute that.
+2025-09-17 16:20:36,642 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:20:36] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:20:57,794 - __main__ - INFO - Processing command: can you just tell me the answer please
+2025-09-17 16:20:58,038 - Orion - INFO - Sending to Groq: can you just tell me the answer please
+2025-09-17 16:20:58,543 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:20:58,643 - __main__ - INFO - Aurora: You haven't asked a question yet. Please ask, and I'll do my best to provide a concise answer.
+2025-09-17 16:20:58,645 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:20:58] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:22:11,356 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:22:11,356 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:22:11,837 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:22:11,839 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:22:11,841 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:22:13,268 - Orion - INFO - spaCy loaded.
+2025-09-17 16:22:13,270 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:22:15,417 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:22:15,427 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:22:15,428 - Orion - INFO - Wake word detection started
+2025-09-17 16:22:15,428 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:22:15,430 - Orion - INFO - Orion initialized.
+2025-09-17 16:22:15,430 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:22:15,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:22:15,515 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:22:18,491 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:18] "GET / HTTP/1.1" 200 -
+2025-09-17 16:22:18,590 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:18] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 16:22:18,856 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:18] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 16:22:56,503 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:56] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-09-17 16:22:56,830 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:56] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:22:56,836 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:56] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:22:57,836 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:22:57] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:23:10,960 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:23:10] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:25:10,258 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:25:10,260 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:25:10,596 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:25:10,596 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:25:10,598 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:25:11,306 - Orion - INFO - spaCy loaded.
+2025-09-17 16:25:11,306 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:25:12,768 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:25:12,780 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:25:12,780 - Orion - INFO - Wake word detection started
+2025-09-17 16:25:12,783 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:25:12,785 - Orion - INFO - Orion initialized.
+2025-09-17 16:25:12,785 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:25:12,878 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:25:12,880 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:25:41,960 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:41] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 16:25:42,100 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:42] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 16:25:42,114 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:42] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 16:25:42,499 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:42] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:25:42,504 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:42] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:25:43,505 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:43] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:25:52,766 - __main__ - INFO - Processing command: what is the best programming language
+2025-09-17 16:25:52,778 - __main__ - INFO - Command intent recognized: calculate
+2025-09-17 16:25:52,780 - __main__ - INFO - Sending complex query to GROQ: what is the best programming language
+2025-09-17 16:25:53,841 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:25:53,901 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:25:53] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:26:25,586 - __main__ - INFO - Processing command: what is the best way to make rice
+2025-09-17 16:26:25,593 - __main__ - INFO - Command intent recognized: calculate
+2025-09-17 16:26:25,593 - __main__ - INFO - Sending complex query to GROQ: what is the best way to make rice
+2025-09-17 16:26:26,557 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:26:26,562 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:26:26] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:26:30,148 - __main__ - INFO - Processing command: what is the time right now
+2025-09-17 16:26:30,150 - __main__ - INFO - Command intent recognized: time
+2025-09-17 16:26:30,153 - __main__ - INFO - Sending complex query to GROQ: what is the time right now
+2025-09-17 16:26:31,128 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:26:31,131 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:26:31] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:26:35,901 - __main__ - INFO - Processing command: set a timer for 2 minutes
+2025-09-17 16:26:35,901 - __main__ - INFO - Command intent recognized: timer
+2025-09-17 16:26:35,908 - __main__ - INFO - Sending complex query to GROQ: set a timer for 2 minutes
+2025-09-17 16:26:36,866 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:26:36,869 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:26:36] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:26:42,898 - __main__ - INFO - Processing command: set a timer for 2 minutes
+2025-09-17 16:26:42,898 - __main__ - INFO - Command intent recognized: timer
+2025-09-17 16:26:42,912 - __main__ - INFO - Sending complex query to GROQ: set a timer for 2 minutes
+2025-09-17 16:26:43,624 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:26:43,628 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:26:43] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:26:48,897 - __main__ - INFO - Processing command: an alarm for 4:30 p.m.
+2025-09-17 16:26:48,897 - __main__ - INFO - Command intent recognized: alarm
+2025-09-17 16:26:48,904 - Orion - INFO - Fallback timer 1 set for 43391 sec
+2025-09-17 16:26:48,904 - __main__ - INFO - Orion: Alarm set for 04:30 AM.
+2025-09-17 16:26:48,906 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:26:48] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:31:00,750 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:31:00,756 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:31:01,339 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:31:01,339 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:31:01,339 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:31:02,899 - Orion - INFO - spaCy loaded.
+2025-09-17 16:31:02,899 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:31:05,359 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:31:05,381 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:31:05,387 - Orion - INFO - Wake word detection started
+2025-09-17 16:31:05,387 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:31:05,387 - Orion - INFO - Orion initialized.
+2025-09-17 16:31:05,391 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:31:05,508 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:31:05,513 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:32:15,837 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:15] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 16:32:15,929 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:15] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 16:32:15,931 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:15] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 16:32:16,299 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:16] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:32:16,303 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:16] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:32:17,301 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:17] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:32:26,062 - __main__ - INFO - Processing command: give me the recipe for biryani
+2025-09-17 16:32:26,109 - __main__ - INFO - Command intent recognized: unknown
+2025-09-17 16:32:26,109 - __main__ - INFO - Sending unknown query to GROQ: give me the recipe for biryani
+2025-09-17 16:32:27,130 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:32:27,172 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:27] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:32:48,979 - __main__ - INFO - Processing command: what is the date today
+2025-09-17 16:32:48,982 - __main__ - INFO - Command intent recognized: date
+2025-09-17 16:32:48,985 - __main__ - INFO - Processing built-in command: date
+2025-09-17 16:32:48,985 - __main__ - INFO - Orion: Today is Wednesday, September 17, 2025
+2025-09-17 16:32:48,985 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:48] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:32:52,916 - __main__ - INFO - Processing command: how much charging do I have
+2025-09-17 16:32:52,916 - __main__ - INFO - Command intent recognized: calculate
+2025-09-17 16:32:52,919 - __main__ - INFO - Processing built-in command: calculate
+2025-09-17 16:32:52,924 - __main__ - INFO - Orion: I couldn't compute that.
+2025-09-17 16:32:52,926 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:32:52] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:33:15,424 - __main__ - INFO - Processing command: calculate 3 + 17
+2025-09-17 16:33:15,429 - __main__ - INFO - Command intent recognized: calculate
+2025-09-17 16:33:15,431 - __main__ - INFO - Processing built-in command: calculate
+2025-09-17 16:33:15,434 - __main__ - INFO - Orion: The result is 20
+2025-09-17 16:33:15,434 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:33:15] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:34:39,865 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:34:39,867 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:34:40,209 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:34:40,209 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:34:40,211 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:34:40,916 - Orion - INFO - spaCy loaded.
+2025-09-17 16:34:40,916 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:34:42,283 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:34:42,291 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:34:42,293 - Orion - INFO - Wake word detection started
+2025-09-17 16:34:42,293 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:34:42,293 - Orion - INFO - Orion initialized.
+2025-09-17 16:34:42,293 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:34:42,338 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:34:42,341 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:35:10,893 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:10] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 16:35:11,078 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:11] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 16:35:11,081 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:11] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 16:35:11,455 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:11] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:35:11,488 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:11] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:35:12,483 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:12] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:35:17,406 - __main__ - INFO - Processing command: set a timer for 3 minutes now
+2025-09-17 16:35:17,430 - __main__ - INFO - Command intent recognized: timer
+2025-09-17 16:35:17,432 - __main__ - INFO - Processing built-in command: timer
+2025-09-17 16:35:17,439 - Orion - INFO - Fallback timer 1 set for 180 sec
+2025-09-17 16:35:17,439 - __main__ - INFO - Orion: Timer set for 3 minutes.
+2025-09-17 16:35:17,441 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:17] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:35:30,982 - __main__ - INFO - Processing command: how much is my memory usage
+2025-09-17 16:35:30,991 - __main__ - INFO - Command intent recognized: calculate
+2025-09-17 16:35:30,994 - __main__ - INFO - Processing built-in command: calculate
+2025-09-17 16:35:31,002 - __main__ - INFO - Orion: I couldn't compute that.
+2025-09-17 16:35:31,002 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:35:31] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:39:50,339 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:39:50,339 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:39:50,678 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:39:50,678 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:39:50,678 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:39:51,485 - Orion - INFO - spaCy loaded.
+2025-09-17 16:39:51,485 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:39:52,916 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:39:52,924 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:39:52,924 - Orion - INFO - Wake word detection started
+2025-09-17 16:39:52,924 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:39:52,924 - Orion - INFO - Orion initialized.
+2025-09-17 16:39:52,926 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:39:52,960 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:39:52,960 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:40:26,162 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:26] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 16:40:26,293 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:26] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 16:40:26,303 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:26] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 16:40:26,690 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:26] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:40:26,733 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:26] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:40:27,889 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:27] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 16:40:30,193 - __main__ - INFO - Processing command: set timer for 2 minutes
+2025-09-17 16:40:30,207 - __main__ - INFO - Command intent recognized: timer
+2025-09-17 16:40:30,207 - __main__ - INFO - Processing built-in command: timer
+2025-09-17 16:40:30,207 - Orion - INFO - Fallback timer 1 set for 120 sec
+2025-09-17 16:40:30,207 - __main__ - INFO - Orion: Timer set for 2 minutes.
+2025-09-17 16:40:30,207 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:30] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:40:46,168 - __main__ - INFO - Processing command: what is the recipe for prawns biryani
+2025-09-17 16:40:46,194 - __main__ - INFO - Command intent recognized: unknown
+2025-09-17 16:40:46,194 - __main__ - INFO - Sending unknown query to GROQ: what is the recipe for prawns biryani
+2025-09-17 16:40:48,530 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 16:40:48,554 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:40:48] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 16:43:05,069 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 16:43:05,071 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 16:43:05,970 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 16:43:05,974 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 16:43:05,987 - Orion - INFO - Speech recognizer configured.
+2025-09-17 16:43:09,999 - Orion - INFO - spaCy loaded.
+2025-09-17 16:43:10,001 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 16:43:11,648 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 16:43:11,666 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 16:43:11,666 - Orion - INFO - Wake word detection started
+2025-09-17 16:43:11,666 - Orion - INFO - Wake word detection thread started
+2025-09-17 16:43:11,669 - Orion - INFO - Orion initialized.
+2025-09-17 16:43:11,672 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 16:43:11,737 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:43:11,901 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 16:43:12,229 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:12] "GET / HTTP/1.1" 200 -
+2025-09-17 16:43:12,296 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:12] "GET /styles.css HTTP/1.1" 200 -
+2025-09-17 16:43:12,608 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:12] "GET /script.js HTTP/1.1" 200 -
+2025-09-17 16:43:20,004 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:20] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-09-17 16:43:24,510 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:24] "POST /api/auth/login HTTP/1.1" 200 -
+2025-09-17 16:43:24,830 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:24] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 16:43:24,855 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:24] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 16:43:25,958 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 16:43:25] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 17:54:25,552 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 17:54:25,553 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 17:54:26,948 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 17:54:26,949 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 17:54:26,949 - Orion - INFO - Speech recognizer configured.
+2025-09-17 17:54:29,442 - Orion - INFO - spaCy loaded.
+2025-09-17 17:54:29,442 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 17:54:29,444 - GroqHandler - ERROR - Failed to initialize Groq client: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-17 17:54:29,445 - Orion - INFO - Wake word detection started
+2025-09-17 17:54:29,445 - Orion - INFO - Wake word detection thread started
+2025-09-17 17:54:29,445 - Orion - INFO - Orion initialized.
+2025-09-17 17:54:29,446 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 17:54:29,786 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 17:54:29,786 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 17:54:31,207 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:31] "GET / HTTP/1.1" 200 -
+2025-09-17 17:54:31,290 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:31] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 17:54:31,293 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:31] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 17:54:32,427 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:32] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 17:54:32,594 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:32] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 17:54:33,493 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 17:54:33] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 18:00:17,985 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 18:00:17,986 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 18:00:18,572 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 18:00:18,572 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 18:00:18,574 - Orion - INFO - Speech recognizer configured.
+2025-09-17 18:00:24,236 - Orion - INFO - spaCy loaded.
+2025-09-17 18:00:24,240 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 18:00:24,242 - GroqHandler - ERROR - Failed to initialize Groq client: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-17 18:00:24,246 - Orion - INFO - Wake word detection started
+2025-09-17 18:00:24,247 - Orion - INFO - Wake word detection thread started
+2025-09-17 18:00:24,251 - Orion - INFO - Orion initialized.
+2025-09-17 18:00:24,252 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 18:00:24,478 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 18:00:24,483 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 18:00:25,269 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:25] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 18:00:25,336 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:25] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 18:00:25,337 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:25] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 18:00:26,236 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:26] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 18:00:26,274 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:26] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 18:00:27,367 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:27] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 18:00:31,703 - __main__ - INFO - Processing command: set a timer for 2 minutes
+2025-09-17 18:00:31,719 - __main__ - INFO - Command intent recognized: timer
+2025-09-17 18:00:31,721 - __main__ - INFO - Processing built-in command: timer
+2025-09-17 18:00:31,727 - Orion - INFO - Fallback timer 1 set for 120 sec
+2025-09-17 18:00:31,733 - __main__ - INFO - Orion: Timer set for 2 minutes.
+2025-09-17 18:00:31,733 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:31] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 18:00:45,090 - __main__ - INFO - Processing command: give me recipe for prawns biryani
+2025-09-17 18:00:45,262 - __main__ - INFO - Command intent recognized: unknown
+2025-09-17 18:00:45,266 - __main__ - INFO - Sending unknown query to GROQ: give me recipe for prawns biryani
+2025-09-17 18:00:45,267 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:00:45] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 18:10:41,423 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 18:10:41,424 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 18:10:41,906 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 18:10:41,906 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 18:10:41,906 - Orion - INFO - Speech recognizer configured.
+2025-09-17 18:10:45,107 - Orion - INFO - spaCy loaded.
+2025-09-17 18:10:45,107 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 18:10:48,577 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 18:10:48,600 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 18:10:48,776 - Orion - INFO - Wake word detection started
+2025-09-17 18:10:48,776 - Orion - INFO - Wake word detection thread started
+2025-09-17 18:10:48,909 - Orion - INFO - Orion initialized.
+2025-09-17 18:10:48,970 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 18:10:49,443 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 18:10:49,454 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-17 18:11:16,361 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:16] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-17 18:11:16,489 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:16] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-09-17 18:11:16,491 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:16] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-09-17 18:11:17,015 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:17] "GET /api/chat/history HTTP/1.1" 200 -
+2025-09-17 18:11:17,029 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:17] "GET /api/timers HTTP/1.1" 200 -
+2025-09-17 18:11:18,024 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:18] "GET /api/system-info HTTP/1.1" 200 -
+2025-09-17 18:11:27,147 - __main__ - INFO - Processing command: best programming language for website
+2025-09-17 18:11:27,221 - __main__ - INFO - Command intent recognized: unknown
+2025-09-17 18:11:27,221 - __main__ - INFO - Sending unknown query to GROQ: best programming language for website
+2025-09-17 18:11:28,319 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 18:11:28,346 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:28] "POST /api/process-command HTTP/1.1" 200 -

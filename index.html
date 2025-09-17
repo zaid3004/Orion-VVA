@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aurora">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="theme-color" content="#1e40af">
+</head>
+<body>
+    <!-- Authentication Screen -->
+    <div id="auth-screen" class="auth-screen">
+        <div class="auth-container">
+            <div class="auth-header">
+                <i class="fas fa-robot"></i>
+                <h1>Orion</h1>
+                <p>Your Commanding Voice Assistant</p>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+                <h2>Welcome Back, Commander</h2>
+                <div class="form-group">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="auth-btn primary">Login</button>
+                <p class="auth-switch">New recruit? <a href="#" id="show-register">Register here</a></p>
+            </form>
+            
+            <!-- Register Form -->
+            <form id="register-form" class="auth-form">
+                <h2>Join the Command</h2>
+                <div class="form-group">
+                    <input type="text" id="register-username" placeholder="Username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="register-fullname" placeholder="Full Name" required>
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <button type="submit" class="auth-btn primary">Register</button>
+                <p class="auth-switch">Already enlisted? <a href="#" id="show-login">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div id="main-app" class="main-app hidden">
+        <!-- Background Elements -->
+        <div class="background-animation">
+            <div class="orion-light orion-1"></div>
+            <div class="orion-light orion-2"></div>
+            <div class="orion-light orion-3"></div>
+        </div>
+
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="nav-left">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>Orion</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="user-profile-btn" id="user-profile-btn">
+                    <div class="profile-pic">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span class="username" id="nav-username">Commander</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="user-info">
+                    <div class="large-profile-pic">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 id="sidebar-username">Commander</h3>
+                    <p id="sidebar-email">commander@orion.ai</p>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-section">
+                    <h4><i class="fas fa-palette"></i> Themes</h4>
+                    <div class="theme-options">
+                        <button class="theme-btn active" data-theme="aurora">
+                            <div class="theme-preview aurora-preview"></div>
+                            <span>Aurora</span>
+                        </button>
+                        <button class="theme-btn" data-theme="dark">
+                            <div class="theme-preview dark-preview"></div>
+                            <span>Dark</span>
+                        </button>
+                        <button class="theme-btn" data-theme="light">
+                            <div class="theme-preview light-preview"></div>
+                            <span>Light</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="sidebar-section">
+                    <h4><i class="fas fa-cog"></i> Settings</h4>
+                    <div class="setting-item">
+                        <span>Voice Volume</span>
+                        <input type="range" id="voice-volume" min="0" max="100" value="80">
+                    </div>
+                    <div class="setting-item">
+                        <span>Wake Words</span>
+                        <label class="toggle">
+                            <input type="checkbox" id="wake-words-enabled" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <button class="logout-btn" id="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- 3-Part Layout Container -->
+            <div class="layout-container">
+                <!-- Part 1: Conversation Area -->
+                <section class="conversation-panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-comments"></i> Mission Communications</h2>
+                        <button class="clear-chat-btn" id="clear-chat-btn" title="Clear conversation">
+                            <i class="fas fa-broom"></i>
+                        </button>
+                    </div>
+                    <div class="conversation-container" id="conversation-container">
+                        <div class="conversation-messages" id="conversation-messages">
+                            <!-- Messages will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <div class="conversation-input">
+                        <div class="orion-avatar">
+                            <div class="avatar-ring" id="avatar-ring">
+                                <i class="fas fa-robot" id="avatar-icon"></i>
+                            </div>
+                        </div>
+                        <div class="voice-controls">
+                            <button class="voice-btn" id="voice-btn" title="Speak to Orion">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                            <button class="stop-btn" id="stop-btn" title="Stop listening" style="display: none;">
+                                <i class="fas fa-stop"></i>
+                            </button>
+                            <button class="stop-speaking-btn" id="stop-speaking-btn" title="Stop Orion">
+                                <i class="fas fa-volume-mute"></i>
+                            </button>
+                        </div>
+                        <div class="status-indicator" id="status-indicator">
+                            <span id="status-text">Ready to listen</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Part 2: Timers & Alarms Panel -->
+                <section class="timers-panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-clock"></i> Mission Timers</h3>
+                    </div>
+                    <div class="timers-container" id="timers-container">
+                        <div class="empty-state" id="timers-empty">
+                            <i class="fas fa-stopwatch"></i>
+                            <p>Ask Orion to set a timer or an alarm:</p>
+                            <code>"Hey Orion, set a timer for 5 minutes"</code>
+                        </div>
+                        <div class="timers-list" id="timers-list">
+                            <!-- Active timers will be displayed here -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Part 3: System Information Panel -->
+                <section class="system-panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-server"></i> System Intelligence</h3>
+                        <button class="refresh-system-btn" id="refresh-system-btn" title="Refresh system info">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                    <div class="system-container" id="system-container">
+                        <div class="system-grid">
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">Audio System</span>
+                                    <span class="system-value" id="audio-status">Ready</span>
+                                </div>
+                            </div>
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">AI Core</span>
+                                    <span class="system-value" id="ai-status">Online</span>
+                                </div>
+                            </div>
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">Memory Usage</span>
+                                    <span class="system-value" id="memory-usage">--</span>
+                                </div>
+                            </div>
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">CPU Usage</span>
+                                    <span class="system-value" id="cpu-usage">--</span>
+                                </div>
+                            </div>
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-battery-half"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">Power Status</span>
+                                    <span class="system-value" id="battery-status">--</span>
+                                </div>
+                            </div>
+                            <div class="system-item">
+                                <div class="system-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div class="system-info">
+                                    <span class="system-label">Network</span>
+                                    <span class="system-value" id="network-status">Connected</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

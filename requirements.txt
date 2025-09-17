@@ -1,3 +1,11 @@
-SpeechRecognition
-pyttsx3
-pyaudio
+Flask==2.3.3
+Flask-Login==0.6.3
+Werkzeug==2.3.7
+requests==2.31.0
+python-dotenv==1.0.0
+groq==0.31.1
+psutil==5.9.5
+pymongo==4.6.0
+bcrypt==4.0.1
+PyJWT==2.8.0
+dnspython==2.4.2

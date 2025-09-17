@@ -1,0 +1,45 @@
+# Aurora Voice Assistant - Complete Requirements
+# Core web framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Database and ORM
+Flask-SQLAlchemy==3.1.1
+SQLAlchemy==2.0.23
+
+# Authentication and session management
+Flask-Login==0.6.3
+
+# Voice assistant dependencies
+SpeechRecognition==3.10.0
+pyttsx3==2.90
+pyaudio==0.2.11
+
+# AI/ML dependencies  
+groq==0.4.1
+spacy==3.7.2
+
+# System monitoring
+psutil==5.9.6
+
+# Environment and configuration
+python-dotenv==1.0.0
+
+# HTTP requests
+requests==2.31.0
+httpx==0.25.2
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Optional: APScheduler for persistent timers (if needed)
+APScheduler==3.10.4
+
+# Optional: Desktop notifications
+plyer==2.1.0
+win10toast==0.9  # Windows only
+
+# Development dependencies (optional)
+pytest==7.4.3
+pytest-flask==1.3.0
