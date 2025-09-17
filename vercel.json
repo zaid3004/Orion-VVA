@@ -19,10 +19,6 @@
       "dest": "/api/orion.py"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))",
-      "dest": "/static/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/api/orion.py"
     }
