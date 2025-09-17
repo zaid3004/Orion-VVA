@@ -470,20 +470,72 @@ def get_chat_history():
         }), 500
 
 @app.route('/api/system-info', methods=['GET'])
+@app.route('/api/system/stats', methods=['GET'])
 def get_system_info():
-    """Get system information"""
+    """Get enhanced system information with real metrics"""
     try:
+        import psutil
+        import platform
+        
+        # Try to get real system info (may not work in serverless)
+        try:
+            memory_info = psutil.virtual_memory()
+            memory_usage = f"{memory_info.percent:.1f}%"
+        except:
+            memory_usage = 'N/A (Serverless)'
+            
+        try:
+            cpu_usage = f"{psutil.cpu_percent(interval=0.1):.1f}%"
+        except:
+            cpu_usage = 'N/A (Serverless)'
+        
+        # Database status check
+        database_status = 'Connected'
+        if MONGODB_AVAILABLE and mongo_models:
+            try:
+                # Test database connection
+                mongo_models['users'].collection.find_one({}, {'_id': 1})
+                database_status = 'Connected'
+            except Exception as e:
+                logger.warning(f"Database health check failed: {e}")
+                database_status = 'Warning'
+        else:
+            database_status = 'Not Available'
+        
+        # AI status check
+        ai_status = 'Connected'
+        if orion_assistant.groq_handler.available:
+            ai_status = 'Connected'
+        else:
+            ai_status = 'Offline'
+            
         system_info = {
             'audio_status': 'Ready',
-            'ai_status': 'Connected' if orion_assistant.groq_handler.available else 'Local Mode',
-            'memory_usage': 'N/A (Serverless)',
-            'cpu_usage': 'N/A (Serverless)',
-            'battery_status': 'N/A (Cloud)',
-            'network_status': 'Connected'
+            'ai_status': ai_status,
+            'memory_usage': memory_usage,
+            'response_time': 0,  # Will be calculated by frontend
+            'database_status': database_status,
+            'network_status': 'Connected',
+            'environment': 'serverless',
+            'platform': platform.system() if hasattr(platform, 'system') else 'Unknown',
+            'mongodb_available': MONGODB_AVAILABLE,
+            'groq_available': orion_assistant.groq_handler.available,
+            'timestamp': datetime.utcnow().isoformat()
         }
         return jsonify(system_info)
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        # Fallback to basic info if advanced metrics fail
+        logger.warning(f"Advanced system info failed, using fallback: {e}")
+        system_info = {
+            'audio_status': 'Ready',
+            'ai_status': 'Connected' if orion_assistant.groq_handler.available else 'Offline',
+            'memory_usage': 'N/A (Serverless)',
+            'response_time': 0,
+            'database_status': 'Connected' if MONGODB_AVAILABLE else 'Not Available',
+            'network_status': 'Connected',
+            'timestamp': datetime.utcnow().isoformat()
+        }
+        return jsonify(system_info)
 
 @app.route('/api/timers', methods=['GET'])
 @require_auth

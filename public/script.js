@@ -183,6 +183,11 @@ class OrionVoiceAssistant {
         this.systemInfo = {};
         this.currentTheme = 'aurora';
         
+        // Mission/conversation management
+        this.missions = [];
+        this.currentMissionId = 'default';
+        this.missionCounter = 1;
+        
         // Sidebar state
         this.sidebarOpen = false;
         
@@ -333,6 +338,12 @@ class OrionVoiceAssistant {
         if (refreshSystemBtn) {
             refreshSystemBtn.addEventListener('click', () => this.refreshSystemInfo());
         }
+        
+        // Mission switcher buttons
+        const newMissionBtn = document.getElementById('new-mission-btn');
+        if (newMissionBtn) {
+            newMissionBtn.addEventListener('click', () => this.createNewMission());
+        }
 
         // Settings controls
         const voiceVolumeSlider = document.getElementById('voice-volume');
@@ -415,6 +426,11 @@ class OrionVoiceAssistant {
                 
                 this.showMainApp();
                 this.showSuccess(`Welcome back, Commander ${data.user.username}!`);
+                
+                // Refresh page after short delay for clean state
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
             } else {
                 this.analytics.trackUserAuthentication('login', false);
                 this.showError(data.message || 'Login failed');
@@ -469,6 +485,11 @@ class OrionVoiceAssistant {
                 
                 this.showMainApp();
                 this.showSuccess(`Welcome to the command, ${data.user.username}!`);
+                
+                // Refresh page after short delay for clean state
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
             } else {
                 this.analytics.trackUserAuthentication('register', false);
                 this.showError(data.message || 'Registration failed');
@@ -507,6 +528,11 @@ class OrionVoiceAssistant {
         this.stopWakeWordDetection();
         
         this.showAuthScreen();
+        
+        // Refresh page for clean logout
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
     }
 
     /**
@@ -542,6 +568,9 @@ class OrionVoiceAssistant {
         this.loadConversationHistory();
         this.refreshSystemInfo();
         this.refreshTimers();
+        
+        // Initialize mission switcher
+        this.updateMissionsDisplay();
         
         // Send welcome message
         setTimeout(() => {
@@ -1602,6 +1631,263 @@ class OrionVoiceAssistant {
         
         // Could implement toast notifications here
         alert(message); // Simple fallback for now
+    }
+    
+    // ==================== MISSION SWITCHER METHODS ====================
+    
+    /**
+     * Create a new mission/conversation
+     */
+    createNewMission() {
+        this.missionCounter++;
+        const mission = {
+            id: `mission_${Date.now()}`,
+            title: `Mission ${this.missionCounter}`,
+            description: 'New conversation',
+            messages: [],
+            createdAt: Date.now(),
+            lastActivity: Date.now()
+        };
+        
+        this.missions.push(mission);
+        this.switchToMission(mission.id);
+        this.updateMissionsDisplay();
+        
+        // Track analytics
+        this.analytics.trackEvent('mission_created', {
+            mission_id: mission.id,
+            mission_count: this.missions.length
+        });
+    }
+    
+    /**
+     * Switch to a specific mission
+     */
+    switchToMission(missionId) {
+        // Save current conversation to current mission
+        if (this.currentMissionId && this.currentMissionId !== missionId) {
+            const currentMission = this.missions.find(m => m.id === this.currentMissionId);
+            if (currentMission) {
+                currentMission.messages = [...this.conversationHistory];
+                currentMission.lastActivity = Date.now();
+            }
+        }
+        
+        // Switch to new mission
+        this.currentMissionId = missionId;
+        const newMission = this.missions.find(m => m.id === missionId);
+        
+        if (newMission) {
+            // Load conversation history for this mission
+            this.conversationHistory = [...newMission.messages];
+            this.displayConversationHistory();
+            
+            // Update UI
+            const currentMissionName = document.getElementById('current-mission-name');
+            if (currentMissionName) {
+                currentMissionName.textContent = newMission.title;
+            }
+        } else {
+            // Default mission
+            this.conversationHistory = [];
+            this.displayConversationHistory();
+        }
+        
+        this.updateMissionsDisplay();
+        
+        // Track analytics
+        this.analytics.trackEvent('mission_switched', {
+            from_mission: this.currentMissionId,
+            to_mission: missionId
+        });
+    }
+    
+    /**
+     * Delete a mission
+     */
+    deleteMission(missionId) {
+        if (missionId === 'default') return; // Can't delete default mission
+        
+        this.missions = this.missions.filter(m => m.id !== missionId);
+        
+        // If we're deleting the current mission, switch to default
+        if (this.currentMissionId === missionId) {
+            this.switchToMission('default');
+        }
+        
+        this.updateMissionsDisplay();
+        
+        // Track analytics
+        this.analytics.trackEvent('mission_deleted', {
+            mission_id: missionId,
+            remaining_missions: this.missions.length
+        });
+    }
+    
+    /**
+     * Update the missions display in the UI
+     */
+    updateMissionsDisplay() {
+        const missionsList = document.getElementById('missions-list');
+        if (!missionsList) return;
+        
+        // Clear existing missions
+        missionsList.innerHTML = '';
+        
+        // Add default mission
+        const defaultMission = {
+            id: 'default',
+            title: 'Primary Mission',
+            description: 'General assistance and commands',
+            lastActivity: Date.now()
+        };
+        
+        this.renderMissionItem(defaultMission, missionsList);
+        
+        // Add user-created missions
+        this.missions.forEach(mission => {
+            this.renderMissionItem(mission, missionsList);
+        });
+    }
+    
+    /**
+     * Render a single mission item
+     */
+    renderMissionItem(mission, container) {
+        const missionElement = document.createElement('div');
+        missionElement.className = `mission-item ${mission.id === this.currentMissionId ? 'active' : ''}`;
+        missionElement.dataset.missionId = mission.id;
+        
+        const icons = {
+            'default': 'fas fa-rocket',
+            'mission': 'fas fa-comments'
+        };
+        
+        const icon = mission.id === 'default' ? icons.default : icons.mission;
+        const preview = mission.description || (mission.messages && mission.messages.length > 0 ? 
+            mission.messages[mission.messages.length - 1].text.substring(0, 40) + '...' : 
+            'No messages yet');
+        
+        missionElement.innerHTML = `
+            <div class="mission-icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="mission-info">
+                <span class="mission-title">${mission.title}</span>
+                <span class="mission-preview">${preview}</span>
+            </div>
+            <div class="mission-actions">
+                ${mission.id !== 'default' ? `
+                    <button class="mission-delete-btn" title="Delete mission" onclick="orionApp.deleteMission('${mission.id}')">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                ` : ''}
+            </div>
+        `;
+        
+        // Add click handler for switching
+        missionElement.addEventListener('click', (e) => {
+            if (!e.target.closest('.mission-actions')) {
+                this.switchToMission(mission.id);
+            }
+        });
+        
+        container.appendChild(missionElement);
+    }
+    
+    // ==================== ENHANCED SYSTEM MONITORING ====================
+    
+    /**
+     * Enhanced system info refresh with real metrics
+     */
+    async refreshSystemInfo() {
+        const startTime = Date.now();
+        
+        try {
+            // Get system metrics from backend
+            const response = await fetch('/api/system/stats', {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('orion_token')}`
+                }
+            });
+            
+            const responseTime = Date.now() - startTime;
+            
+            if (response.ok) {
+                const stats = await response.json();
+                this.updateSystemDisplay({
+                    ...stats,
+                    response_time: responseTime,
+                    network_status: 'Connected'
+                });
+            } else {
+                // Fallback to client-side metrics
+                this.updateSystemDisplay({
+                    audio_status: this.recognition ? 'Ready' : 'Not Available',
+                    ai_status: 'Connected',
+                    memory_usage: this.getMemoryUsage(),
+                    response_time: responseTime,
+                    database_status: 'Checking...',
+                    network_status: 'Connected'
+                });
+            }
+        } catch (error) {
+            console.error('Failed to fetch system stats:', error);
+            // Fallback metrics
+            this.updateSystemDisplay({
+                audio_status: this.recognition ? 'Ready' : 'Not Available',
+                ai_status: 'Offline',
+                memory_usage: this.getMemoryUsage(),
+                response_time: Date.now() - startTime,
+                database_status: 'Offline',
+                network_status: 'Connected'
+            });
+        }
+    }
+    
+    /**
+     * Get client-side memory usage estimate
+     */
+    getMemoryUsage() {
+        if (performance.memory) {
+            const usedMB = Math.round(performance.memory.usedJSHeapSize / 1048576);
+            const totalMB = Math.round(performance.memory.totalJSHeapSize / 1048576);
+            return `${usedMB}/${totalMB} MB`;
+        }
+        return 'N/A';
+    }
+    
+    /**
+     * Update system display with real metrics
+     */
+    updateSystemDisplay(stats) {
+        const updates = {
+            'audio-status': stats.audio_status || 'Ready',
+            'ai-status': stats.ai_status || 'Connected',
+            'memory-usage': stats.memory_usage || 'N/A',
+            'response-time': stats.response_time ? `${stats.response_time}ms` : '--',
+            'database-status': stats.database_status || 'Connected',
+            'network-status': stats.network_status || 'Connected'
+        };
+        
+        Object.entries(updates).forEach(([elementId, value]) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = value;
+                
+                // Add status colors
+                element.classList.remove('status-good', 'status-warning', 'status-error');
+                if (value.includes('Connected') || value.includes('Ready') || value.includes('Online')) {
+                    element.classList.add('status-good');
+                } else if (value.includes('Offline') || value.includes('Error')) {
+                    element.classList.add('status-error');
+                } else if (value.includes('Warning') || value.includes('Checking')) {
+                    element.classList.add('status-warning');
+                }
+            }
+        });
+        
+        this.systemInfo = stats;
     }
 }
 

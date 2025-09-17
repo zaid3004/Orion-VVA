@@ -1018,8 +1018,8 @@ input:checked + .slider:before {
         height: 60vh;
     }
     
-    .timers-panel,
-    .system-panel {
+    .system-panel,
+    .missions-panel {
         height: 300px;
     }
 }
@@ -1051,4 +1051,190 @@ input:checked + .slider:before {
         width: 100%;
         justify-content: center;
     }
+}
+
+/* ==================== MISSION SWITCHER PANEL ==================== */
+.missions-panel {
+    background: var(--panel-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px var(--shadow-color);
+}
+
+.new-mission-btn {
+    background: var(--orion-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+}
+
+.new-mission-btn:hover {
+    background: var(--orion-red);
+    transform: translateY(-1px);
+}
+
+.missions-container {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.missions-list {
+    flex: 1;
+    space-y: 0.5rem;
+}
+
+.mission-item {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.mission-item:hover {
+    background: var(--hover-bg);
+    border-color: var(--orion-blue);
+    transform: translateX(2px);
+}
+
+.mission-item.active {
+    background: var(--active-bg);
+    border-color: var(--orion-blue);
+    box-shadow: 0 0 0 1px var(--orion-blue);
+}
+
+.mission-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-bg);
+    color: var(--orion-blue);
+    flex-shrink: 0;
+}
+
+.mission-item.active .mission-icon {
+    background: var(--orion-blue);
+    color: white;
+}
+
+.mission-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.mission-title {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mission-preview {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mission-actions {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.mission-item:hover .mission-actions {
+    opacity: 1;
+}
+
+.mission-delete-btn {
+    background: transparent;
+    color: var(--text-muted);
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.mission-delete-btn:hover {
+    background: var(--orion-red);
+    color: white;
+}
+
+.missions-footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.current-mission-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.current-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.current-mission-name {
+    color: var(--orion-blue);
+    font-weight: 600;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==================== SYSTEM STATUS COLORS ==================== */
+.status-good {
+    color: var(--orion-green) !important;
+}
+
+.status-warning {
+    color: var(--orion-gold) !important;
+}
+
+.status-error {
+    color: var(--orion-red) !important;
 }

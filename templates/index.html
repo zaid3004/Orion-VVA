@@ -103,7 +103,7 @@
                     <div class="theme-options">
                         <button class="theme-btn active" data-theme="aurora">
                             <div class="theme-preview aurora-preview"></div>
-                            <span>Aurora</span>
+                            <span>Orion</span>
                         </button>
                         <button class="theme-btn" data-theme="dark">
                             <div class="theme-preview dark-preview"></div>
@@ -178,24 +178,7 @@
                     </div>
                 </section>
 
-                <!-- Part 2: Timers & Alarms Panel -->
-                <section class="timers-panel">
-                    <div class="panel-header">
-                        <h3><i class="fas fa-clock"></i> Mission Timers</h3>
-                    </div>
-                    <div class="timers-container" id="timers-container">
-                        <div class="empty-state" id="timers-empty">
-                            <i class="fas fa-stopwatch"></i>
-                            <p>Ask Orion to set a timer or an alarm:</p>
-                            <code>"Hey Orion, set a timer for 5 minutes"</code>
-                        </div>
-                        <div class="timers-list" id="timers-list">
-                            <!-- Active timers will be displayed here -->
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Part 3: System Information Panel -->
+                <!-- Part 2: System Information Panel -->
                 <section class="system-panel">
                     <div class="panel-header">
                         <h3><i class="fas fa-server"></i> System Intelligence</h3>
@@ -237,17 +220,17 @@
                                     <i class="fas fa-microchip"></i>
                                 </div>
                                 <div class="system-info">
-                                    <span class="system-label">CPU Usage</span>
-                                    <span class="system-value" id="cpu-usage">--</span>
+                                    <span class="system-label">Response Time</span>
+                                    <span class="system-value" id="response-time">--</span>
                                 </div>
                             </div>
                             <div class="system-item">
                                 <div class="system-icon">
-                                    <i class="fas fa-battery-half"></i>
+                                    <i class="fas fa-database"></i>
                                 </div>
                                 <div class="system-info">
-                                    <span class="system-label">Power Status</span>
-                                    <span class="system-value" id="battery-status">--</span>
+                                    <span class="system-label">Database</span>
+                                    <span class="system-value" id="database-status">--</span>
                                 </div>
                             </div>
                             <div class="system-item">
@@ -258,6 +241,40 @@
                                     <span class="system-label">Network</span>
                                     <span class="system-value" id="network-status">Connected</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Part 3: Mission Switcher Panel -->
+                <section class="missions-panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-comments-alt"></i> Mission Switcher</h3>
+                        <button class="new-mission-btn" id="new-mission-btn" title="Start new mission">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="missions-container" id="missions-container">
+                        <div class="missions-list" id="missions-list">
+                            <div class="mission-item active" data-mission-id="default">
+                                <div class="mission-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="mission-info">
+                                    <span class="mission-title">Primary Mission</span>
+                                    <span class="mission-preview">General assistance and commands</span>
+                                </div>
+                                <div class="mission-actions">
+                                    <button class="mission-delete-btn" title="Delete mission">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="missions-footer">
+                            <div class="current-mission-info">
+                                <span class="current-label">Active Mission:</span>
+                                <span class="current-mission-name" id="current-mission-name">Primary Mission</span>
                             </div>
                         </div>
                     </div>
