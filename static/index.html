@@ -267,5 +267,31 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Replace GA_MEASUREMENT_ID with your actual Google Analytics ID
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Orion Voice Assistant',
+            custom_parameter: 'voice_assistant'
+        });
+    </script>
+    
+    <!-- Vercel Analytics -->
+    <script>
+        // Load Vercel Analytics
+        (function() {
+            if (typeof window !== 'undefined') {
+                import('https://va.vercel-scripts.com/v1/script.js').then((analytics) => {
+                    analytics.inject();
+                });
+            }
+        })();
+    </script>
 </body>
 </html>

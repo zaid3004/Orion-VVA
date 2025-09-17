@@ -1101,3 +1101,19 @@ What type of gift are you looking for?
 2025-09-17 18:11:27,221 - __main__ - INFO - Sending unknown query to GROQ: best programming language for website
 2025-09-17 18:11:28,319 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-09-17 18:11:28,346 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2025 18:11:28] "POST /api/process-command HTTP/1.1" 200 -
+2025-09-17 18:23:42,876 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\zaid1\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-17 18:23:42,876 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\zaid1\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2025-09-17 18:23:43,191 - Orion - INFO - Using voice: Microsoft David Desktop - English (United States)
+2025-09-17 18:23:43,191 - Orion - INFO - TTS engine initialized for Orion.
+2025-09-17 18:23:43,191 - Orion - INFO - Speech recognizer configured.
+2025-09-17 18:23:43,833 - Orion - INFO - spaCy loaded.
+2025-09-17 18:23:43,833 - Orion - WARNING - APScheduler not installed; persistent scheduling disabled.
+2025-09-17 18:23:45,279 - httpx - INFO - HTTP Request: GET https://api.groq.com/openai/v1/models "HTTP/1.1 200 OK"
+2025-09-17 18:23:45,290 - GroqHandler - INFO - Groq API connection OK.
+2025-09-17 18:23:45,295 - Orion - INFO - Wake word detection started
+2025-09-17 18:23:45,295 - Orion - INFO - Wake word detection thread started
+2025-09-17 18:23:45,295 - Orion - INFO - Orion initialized.
+2025-09-17 18:23:45,295 - __main__ - INFO - Voice Assistant initialized successfully
+2025-09-17 18:23:45,348 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 18:23:45,348 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

@@ -3,6 +3,162 @@
  * Handles authentication, 3-part layout, themes, and voice interaction
  */
 
+class OrionAnalytics {
+    constructor() {
+        this.sessionStart = Date.now();
+        this.events = [];
+        this.userId = null;
+        this.sessionId = this.generateSessionId();
+        
+        // Track session start
+        this.trackEvent('session_start', {
+            timestamp: this.sessionStart,
+            user_agent: navigator.userAgent,
+            screen_resolution: `${screen.width}x${screen.height}`,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        });
+    }
+    
+    generateSessionId() {
+        return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    }
+    
+    setUser(userId, username) {
+        this.userId = userId;
+        this.trackEvent('user_identified', {
+            user_id: userId,
+            username: username
+        });
+    }
+    
+    trackEvent(eventName, properties = {}) {
+        const event = {
+            event_name: eventName,
+            timestamp: Date.now(),
+            session_id: this.sessionId,
+            user_id: this.userId,
+            properties: {
+                ...properties,
+                page_url: window.location.href,
+                referrer: document.referrer
+            }
+        };
+        
+        this.events.push(event);
+        
+        // Send to Google Analytics if available
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                event_category: 'orion_vva',
+                event_label: properties.label || eventName,
+                value: properties.value || 1,
+                custom_parameter_1: properties.command_type || null,
+                custom_parameter_2: properties.timer_duration || null
+            });
+        }
+        
+        // Send to backend for storage
+        this.sendToBackend(event);
+        
+        console.log('📊 Analytics:', eventName, properties);
+    }
+    
+    // Voice-specific tracking methods
+    trackVoiceCommand(command, intent, success, processingTime) {
+        this.trackEvent('voice_command', {
+            command: command,
+            intent: intent,
+            success: success,
+            processing_time: processingTime,
+            command_length: command.length
+        });
+    }
+    
+    trackTimerCreated(duration, description) {
+        this.trackEvent('timer_created', {
+            timer_duration: duration,
+            timer_description: description,
+            label: `${duration}s timer`
+        });
+    }
+    
+    trackTimerCompleted(duration, description) {
+        this.trackEvent('timer_completed', {
+            timer_duration: duration,
+            timer_description: description,
+            label: `${duration}s timer completed`
+        });
+    }
+    
+    trackThemeChange(oldTheme, newTheme) {
+        this.trackEvent('theme_changed', {
+            old_theme: oldTheme,
+            new_theme: newTheme,
+            label: `${oldTheme} to ${newTheme}`
+        });
+    }
+    
+    trackUserAuthentication(action, success, method = 'form') {
+        this.trackEvent('user_auth', {
+            auth_action: action, // 'login' or 'register'
+            auth_success: success,
+            auth_method: method,
+            label: `${action}_${success ? 'success' : 'failed'}`
+        });
+    }
+    
+    trackError(errorType, errorMessage, context) {
+        this.trackEvent('error_occurred', {
+            error_type: errorType,
+            error_message: errorMessage,
+            error_context: context,
+            label: `${errorType}: ${errorMessage}`
+        });
+    }
+    
+    trackPageView(pageName) {
+        this.trackEvent('page_view', {
+            page_name: pageName,
+            label: pageName
+        });
+    }
+    
+    async sendToBackend(event) {
+        try {
+            await fetch('/api/analytics', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('orion_token') || ''}`
+                },
+                body: JSON.stringify(event)
+            });
+        } catch (error) {
+            console.warn('Failed to send analytics to backend:', error);
+        }
+    }
+    
+    // Get session summary
+    getSessionSummary() {
+        const sessionDuration = Date.now() - this.sessionStart;
+        const eventCounts = {};
+        
+        this.events.forEach(event => {
+            eventCounts[event.event_name] = (eventCounts[event.event_name] || 0) + 1;
+        });
+        
+        return {
+            session_id: this.sessionId,
+            user_id: this.userId,
+            session_duration: sessionDuration,
+            total_events: this.events.length,
+            event_breakdown: eventCounts,
+            started_at: this.sessionStart,
+            ended_at: Date.now()
+        };
+    }
+}
+
 class OrionVoiceAssistant {
     constructor() {
         // Authentication state
@@ -29,6 +185,9 @@ class OrionVoiceAssistant {
         
         // Sidebar state
         this.sidebarOpen = false;
+        
+        // Analytics tracking
+        this.analytics = new OrionAnalytics();
         
         this.init();
     }
@@ -250,9 +409,14 @@ class OrionVoiceAssistant {
                 localStorage.setItem('orion_user', JSON.stringify(data.user));
                 localStorage.setItem('orion_token', data.token || 'authenticated');
                 
+                // Track successful login
+                this.analytics.setUser(data.user.id || data.user.username, data.user.username);
+                this.analytics.trackUserAuthentication('login', true);
+                
                 this.showMainApp();
                 this.showSuccess(`Welcome back, Commander ${data.user.username}!`);
             } else {
+                this.analytics.trackUserAuthentication('login', false);
                 this.showError(data.message || 'Login failed');
             }
         } catch (error) {
@@ -299,9 +463,14 @@ class OrionVoiceAssistant {
                 localStorage.setItem('orion_user', JSON.stringify(data.user));
                 localStorage.setItem('orion_token', data.token || 'authenticated');
                 
+                // Track successful registration
+                this.analytics.setUser(data.user.id || data.user.username, data.user.username);
+                this.analytics.trackUserAuthentication('register', true);
+                
                 this.showMainApp();
                 this.showSuccess(`Welcome to the command, ${data.user.username}!`);
             } else {
+                this.analytics.trackUserAuthentication('register', false);
                 this.showError(data.message || 'Registration failed');
             }
         } catch (error) {
@@ -432,6 +601,7 @@ class OrionVoiceAssistant {
      * Change theme
      */
     changeTheme(theme) {
+        const oldTheme = this.currentTheme;
         const html = document.documentElement;
         html.setAttribute('data-theme', theme);
         this.currentTheme = theme;
@@ -444,6 +614,9 @@ class OrionVoiceAssistant {
         
         // Save theme preference
         localStorage.setItem('orion_theme', theme);
+        
+        // Track theme change
+        this.analytics.trackThemeChange(oldTheme, theme);
     }
 
     /**
@@ -1225,6 +1398,9 @@ class OrionVoiceAssistant {
         const timer = this.createTimer(totalSeconds, durationText.trim());
         this.startTimer(timer);
         
+        // Track timer creation
+        this.analytics.trackTimerCreated(totalSeconds, durationText.trim());
+        
         const endTime = new Date(Date.now() + totalSeconds * 1000);
         return `Timer set for ${durationText.trim()}, Commander. It will complete at ${endTime.toLocaleTimeString()}.`;
     }
@@ -1281,6 +1457,9 @@ class OrionVoiceAssistant {
         
         // Update display
         this.updateTimersDisplay(this.timers);
+        
+        // Track timer completion
+        this.analytics.trackTimerCompleted(timer.duration, timer.description);
         
         // Notify user
         const message = `Timer complete, Commander! Your ${timer.description} timer has finished.`;
@@ -1417,6 +1596,10 @@ class OrionVoiceAssistant {
      */
     showError(message) {
         console.error('Error:', message);
+        
+        // Track error analytics
+        this.analytics.trackError('user_error', message, 'showError');
+        
         // Could implement toast notifications here
         alert(message); // Simple fallback for now
     }
@@ -1426,6 +1609,27 @@ class OrionVoiceAssistant {
 let orionApp;
 document.addEventListener('DOMContentLoaded', () => {
     orionApp = new OrionVoiceAssistant();
+});
+
+// Global error tracking
+window.addEventListener('error', (event) => {
+    if (orionApp && orionApp.analytics) {
+        orionApp.analytics.trackError('javascript_error', event.message, {
+            filename: event.filename,
+            lineno: event.lineno,
+            colno: event.colno,
+            stack: event.error ? event.error.stack : null
+        });
+    }
+});
+
+// Track unhandled promise rejections
+window.addEventListener('unhandledrejection', (event) => {
+    if (orionApp && orionApp.analytics) {
+        orionApp.analytics.trackError('unhandled_promise_rejection', event.reason, {
+            promise: event.promise
+        });
+    }
 });
 
 // Global functions for timer controls

@@ -576,6 +576,32 @@ def health_check():
         'timestamp': datetime.utcnow().isoformat()
     })
 
+@app.route('/api/analytics', methods=['POST'])
+def store_analytics():
+    """Store analytics data"""
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({'success': False, 'message': 'No data provided'}), 400
+        
+        # Log analytics event
+        logger.info(f"📊 Analytics Event: {data.get('event_name', 'unknown')} - {data.get('properties', {})}")
+        
+        # In a full implementation, you would store this in a database
+        # For now, we'll just acknowledge receipt
+        return jsonify({
+            'success': True,
+            'message': 'Analytics data received',
+            'event_id': f"event_{int(datetime.now().timestamp())}"
+        })
+        
+    except Exception as e:
+        logger.error(f"Error storing analytics: {e}")
+        return jsonify({
+            'success': False,
+            'message': 'Failed to store analytics data'
+        }), 500
+
 # For static files
 @app.route('/<path:filename>')
 def serve_static(filename):
